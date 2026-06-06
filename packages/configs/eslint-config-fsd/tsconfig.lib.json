@@ -1,8 +1,8 @@
 {
   "extends": "@qualcomm-ui/tsconfig/tsconfig.strict.json",
   "compilerOptions": {
+    "composite": true,
     "jsx": "preserve",
-    "noEmit": true,
     "strictPropertyInitialization": false,
   },
   "include": ["./src"],
