@@ -1,5 +1,21 @@
 # @qualcomm-ui/react-core Changelog
 
+## 1.5.6
+
+Jun 5th, 2026
+
+### Bug Fixes
+
+- [useSegmentedControlItem]: add explicit return type ([0318e9d](https://github.com/qualcomm/qualcomm-ui/commit/0318e9d))
+
+## 1.5.5
+
+Jun 5th, 2026
+
+### Miscellaneous Chores
+
+- **deps:** update dependencies [@qualcomm-ui/core@1.11.4]
+
 ## 1.5.4
 
 Jun 3rd, 2026
