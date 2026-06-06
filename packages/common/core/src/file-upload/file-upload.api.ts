@@ -263,7 +263,7 @@ export function createFileUploadApi(
 
           getFileEntries(event.dataTransfer.items, prop("directory"))
             .then((files) => {
-              send({files: flatArray(files), type: "DROPZONE.DROP"})
+              return send({files: flatArray(files), type: "DROPZONE.DROP"})
             })
             .catch((err) => {
               warn(

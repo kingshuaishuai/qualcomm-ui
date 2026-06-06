@@ -9,6 +9,9 @@ export default {
     "**/vite.config.ts.timestamp*",
     "**/frameworks/react-internal/files/component-list.md",
     "**/generated/**",
+    "**/*/dist",
     "packages/**/qui-env.d.ts",
+    "**/*.{md,mdx,yml,yaml,json,css}",
+    "**/*.{webmanifest}",
   ],
 } satisfies OxfmtConfig

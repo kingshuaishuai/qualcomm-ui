@@ -1,9 +1,9 @@
 // Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 
-import {defineConfig} from "eslint/config"
 import * as mdx from "eslint-plugin-mdx"
 import reactPlugin from "eslint-plugin-react"
+import {defineConfig} from "eslint/config"
 
 const recommended = defineConfig({
   ...mdx.flat,

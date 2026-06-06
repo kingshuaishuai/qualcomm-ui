@@ -2,8 +2,8 @@ import {HTMLAttributes, ReactNode, useState} from "react"
 
 import {ChevronRightIcon, ExternalLinkIcon} from "lucide-react"
 
-import {IconButton} from "@qualcomm-ui/react/button"
 import {DocLink} from "@qualcomm-ui/react-internal/layout"
+import {IconButton} from "@qualcomm-ui/react/button"
 import {clsx} from "@qualcomm-ui/utils/clsx"
 
 LinkOverlayPanel.displayName = "LinkOverlayPanel"

@@ -10,10 +10,10 @@ import {
 } from "react"
 
 import type {ReactDemoData} from "@qualcomm-ui/mdx-common"
-import type {ColorScheme} from "@qualcomm-ui/react/qds-theme"
 import {useSafeLayoutEffect} from "@qualcomm-ui/react-core/effects"
 import {useMdxDocsContext} from "@qualcomm-ui/react-mdx/context"
 import {CopyToClipboardButton} from "@qualcomm-ui/react-mdx/copy-to-clipboard"
+import type {ColorScheme} from "@qualcomm-ui/react/qds-theme"
 import {booleanDataAttr} from "@qualcomm-ui/utils/attributes"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 

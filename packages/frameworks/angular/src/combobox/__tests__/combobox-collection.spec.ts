@@ -3,8 +3,8 @@ import {render} from "@testing-library/angular"
 import {describe, expect, test} from "vitest"
 import {page} from "vitest/browser"
 
-import {ComboboxModule} from "@qualcomm-ui/angular/combobox"
 import {PortalDirective} from "@qualcomm-ui/angular-core/portal"
+import {ComboboxModule} from "@qualcomm-ui/angular/combobox"
 import {comboboxCollection} from "@qualcomm-ui/core/combobox"
 
 import {type MultiComponentTest, runTests} from "~test-utils"
@@ -61,9 +61,7 @@ const testCases: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [ComboboxModule],
-        template: `
-          <q-combobox label="Label" [collection]="collection" />
-        `,
+        template: ` <q-combobox label="Label" [collection]="collection" /> `,
       })
       class SimpleComponent {
         collection = objectCollection

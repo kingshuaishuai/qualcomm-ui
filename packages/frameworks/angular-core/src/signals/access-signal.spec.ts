@@ -11,9 +11,7 @@ import {accessSignal} from "./access-signal"
 describe("accessSignal", () => {
   test("returns the value directly when given a plain value", async () => {
     @Component({
-      template: `
-        <span>{{ result }}</span>
-      `,
+      template: ` <span>{{ result }}</span> `,
     })
     class TestComponent {
       protected readonly result = accessSignal("hello")
@@ -26,9 +24,7 @@ describe("accessSignal", () => {
 
   test("unwraps and returns the signal value when given a signal", async () => {
     @Component({
-      template: `
-        <span>{{ result }}</span>
-      `,
+      template: ` <span>{{ result }}</span> `,
     })
     class TestComponent {
       protected readonly result = accessSignal(signal("from signal"))

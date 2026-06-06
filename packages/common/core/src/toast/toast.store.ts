@@ -173,6 +173,7 @@ export function createToastStore<V = string>(
           const successOptions = options.success?.(response)
           create({...shared, ...successOptions, id, type: "success"})
         }
+        return
       })
       .catch((error) => {
         result = ["reject", error]
@@ -181,6 +182,7 @@ export function createToastStore<V = string>(
           const errorOptions = options.error?.(error)
           create({...shared, ...errorOptions, id, type: "danger"})
         }
+        return
       })
       .finally(() => {
         if (removable) {
@@ -192,9 +194,13 @@ export function createToastStore<V = string>(
     const unwrap = () =>
       new Promise<T>((resolve, reject) => {
         void prom
-          .then(() =>
-            result[0] === "reject" ? reject(result[1]) : resolve(result[1]),
-          )
+          .then(() => {
+            if (result[0] === "reject") {
+              return reject(result[1])
+            } else {
+              return resolve(result[1])
+            }
+          })
           .catch(reject)
       })
 

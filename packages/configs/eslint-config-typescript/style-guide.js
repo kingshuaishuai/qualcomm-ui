@@ -2,12 +2,12 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 
 import stylistic from "@stylistic/eslint-plugin"
-import {defineConfig} from "eslint/config"
 import commentLength from "eslint-plugin-comment-length"
 import importPlugin from "eslint-plugin-import"
 import perfectionist from "eslint-plugin-perfectionist"
 import prettierPlugin from "eslint-plugin-prettier"
 import unusedImportsPlugin from "eslint-plugin-unused-imports"
+import {defineConfig} from "eslint/config"
 
 export default defineConfig({
   name: "qui-style-guide",

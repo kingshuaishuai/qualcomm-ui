@@ -3,7 +3,7 @@
     "esModuleInterop": true,
     "composite": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": false,
+    "strict": true,
     "strictPropertyInitialization": false,
     "jsx": "react-jsx",
     "module": "ESNext",

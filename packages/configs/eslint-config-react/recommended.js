@@ -1,8 +1,8 @@
 // Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 
-import {defineConfig} from "eslint/config"
 import reactPlugin from "eslint-plugin-react"
+import {defineConfig} from "eslint/config"
 
 export default defineConfig({
   name: "qui-react-recommended",

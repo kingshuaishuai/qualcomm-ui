@@ -5,8 +5,6 @@ import {type ReactNode, useMemo} from "react"
 
 import {MDXProvider, type useMDXComponents} from "@mdx-js/react"
 
-import {Link} from "@qualcomm-ui/react/link"
-import {Table} from "@qualcomm-ui/react/table"
 import {useMdxDocsContext} from "@qualcomm-ui/react-mdx/context"
 import {HeadingSteps} from "@qualcomm-ui/react-mdx/heading-steps"
 import {
@@ -14,6 +12,8 @@ import {
   SpoilerRoot,
   SpoilerSummary,
 } from "@qualcomm-ui/react-mdx/spoiler"
+import {Link} from "@qualcomm-ui/react/link"
+import {Table} from "@qualcomm-ui/react/table"
 import {clsx} from "@qualcomm-ui/utils/clsx"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 

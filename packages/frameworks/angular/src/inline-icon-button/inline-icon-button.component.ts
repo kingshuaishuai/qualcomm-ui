@@ -4,14 +4,14 @@
 import {Component, input, type OnInit} from "@angular/core"
 import {X} from "lucide-angular"
 
-import {IconDirective} from "@qualcomm-ui/angular/icon"
-import {QuiPreloadDirective} from "@qualcomm-ui/angular/transitions"
 import type {LucideIcon} from "@qualcomm-ui/angular-core/lucide"
 import {
   QBindDirective,
   useTrackBindings,
 } from "@qualcomm-ui/angular-core/machine"
 import type {SignalifyInput} from "@qualcomm-ui/angular-core/signals"
+import {IconDirective} from "@qualcomm-ui/angular/icon"
+import {QuiPreloadDirective} from "@qualcomm-ui/angular/transitions"
 import {
   type QdsInlineIconButtonApiProps,
   type QdsInlineIconButtonEmphasis,
@@ -25,9 +25,7 @@ import {useInlineIconButtonApi} from "./use-inline-icon-button-api"
   hostDirectives: [QuiPreloadDirective],
   imports: [IconDirective, QBindDirective],
   selector: "[q-inline-icon-button]",
-  template: `
-    <svg [q-bind]="api().getIconBindings()" [qIcon]="icon()"></svg>
-  `,
+  template: ` <svg [q-bind]="api().getIconBindings()" [qIcon]="icon()"></svg> `,
 })
 export class InlineIconButtonComponent
   implements SignalifyInput<QdsInlineIconButtonApiProps>, OnInit

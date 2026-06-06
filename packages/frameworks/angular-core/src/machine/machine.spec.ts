@@ -21,9 +21,7 @@ async function renderMachine<T extends MachineSchema>(
 ) {
   @Component({
     selector: "lightswitch-comp",
-    template: `
-      <span>test-component</span>
-    `,
+    template: ` <span>test-component</span> `,
   })
   class TestComponent implements OnInit {
     api: Machine<T>

@@ -4,8 +4,8 @@
 import {Component} from "@angular/core"
 import {X} from "lucide-angular"
 
-import {DialogCloseButtonComponent} from "@qualcomm-ui/angular/dialog"
 import {provideIcons} from "@qualcomm-ui/angular-core/lucide"
+import {DialogCloseButtonComponent} from "@qualcomm-ui/angular/dialog"
 
 /**
  * A button that closes the drawer.
@@ -14,8 +14,6 @@ import {provideIcons} from "@qualcomm-ui/angular-core/lucide"
   providers: [provideIcons({X})],
   selector: "[q-drawer-close-button]",
   standalone: false,
-  template: `
-    <svg qIcon="X" [q-bind]="buttonApi().getIconBindings()"></svg>
-  `,
+  template: ` <svg qIcon="X" [q-bind]="buttonApi().getIconBindings()"></svg> `,
 })
 export class DrawerCloseButtonComponent extends DialogCloseButtonComponent {}

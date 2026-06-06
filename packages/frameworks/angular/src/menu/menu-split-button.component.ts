@@ -11,16 +11,16 @@ import {
   output,
 } from "@angular/core"
 
-import {
-  type ButtonGroupContextValue,
-  provideQdsButtonGroupContext,
-  QdsButtonGroupContextService,
-} from "@qualcomm-ui/angular/button"
 import type {LucideIconOrString} from "@qualcomm-ui/angular-core/lucide"
 import {
   normalizeProps,
   useTrackBindings,
 } from "@qualcomm-ui/angular-core/machine"
+import {
+  type ButtonGroupContextValue,
+  provideQdsButtonGroupContext,
+  QdsButtonGroupContextService,
+} from "@qualcomm-ui/angular/button"
 import {
   type QdsButtonDensity,
   type QdsButtonEmphasis,

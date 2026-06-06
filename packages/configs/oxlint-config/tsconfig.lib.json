@@ -1,13 +1,10 @@
 {
-  "extends": "@qualcomm-ui/tsconfig/tsconfig.strict.json",
+  "extends": "@qualcomm-ui/tsconfig/tsconfig.lib.json",
   "compilerOptions": {
     "composite": true,
     "rootDir": "./src",
-    "module": "NodeNext",
     "outDir": "./dist",
-    "emitDeclarationOnly": false,
-    "moduleResolution": "NodeNext",
-    "tsBuildInfoFile": "node_modules/.tmp/.tsbuildinfo"
+    "tsBuildInfoFile": "node_modules/.tmp/.tsbuildinfo-lib"
   },
   "include": ["./src"]
 }

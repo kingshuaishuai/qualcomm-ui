@@ -40,9 +40,7 @@ const testCases: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [CheckboxModule],
-        template: `
-          <label label="${demoLabel}" q-checkbox></label>
-        `,
+        template: ` <label label="${demoLabel}" q-checkbox></label> `,
       })
       class SimpleComponent {}
       return SimpleComponent
@@ -177,9 +175,7 @@ const testCases: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [CheckboxModule],
-        template: `
-          <label disabled label="${demoLabel}" q-checkbox></label>
-        `,
+        template: ` <label disabled label="${demoLabel}" q-checkbox></label> `,
       })
       class SimpleComponent {}
       return SimpleComponent

@@ -14,8 +14,12 @@ import {
 import {capitalCase} from "@qualcomm-ui/utils/change-case"
 import {defined} from "@qualcomm-ui/utils/guard"
 
-import {getRouteMeta} from "./get-route-meta"
-import type {NavMeta, RouteMetaEntryInternal, RouteMetaInternal} from "./types"
+import {getRouteMeta} from "./get-route-meta.js"
+import type {
+  NavMeta,
+  RouteMetaEntryInternal,
+  RouteMetaInternal,
+} from "./types.js"
 
 interface InitialRoute {
   pageFrontmatter: Partial<PageFrontmatter>

@@ -3,16 +3,16 @@ import {dirname, resolve} from "node:path"
 import {fileURLToPath} from "node:url"
 import {describe, expect, test, vi} from "vitest"
 
-vi.mock("node:child_process", () => ({
-  execSync: () => "",
-}))
-
 import {SearchIndexer} from "../search-indexer"
 
 import {readJsonSync, writeJsonSync} from "./utils"
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
+
+vi.mock("node:child_process", () => ({
+  execSync: () => "",
+}))
 
 const filePaths = {
   navItems: resolve(

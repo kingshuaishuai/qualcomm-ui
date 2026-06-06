@@ -7,9 +7,7 @@ import type {User} from "./user-data.service"
 
 @Component({
   selector: "app-duration-cell-1",
-  template: `
-    {{ formattedDuration() }}
-  `,
+  template: `{{ formattedDuration() }}`,
 })
 export class DurationCell extends CellComponentContextDirective<User, number> {
   formattedDuration() {

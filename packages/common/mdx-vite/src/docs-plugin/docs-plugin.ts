@@ -6,9 +6,9 @@ import type {PluginOption, ResolvedConfig} from "vite"
 
 import {dedent} from "@qualcomm-ui/utils/dedent"
 
-import type {QuiDocsPluginOptions} from "./config"
-import {ConfigLoader} from "./config/config-loader"
-import {fixPath} from "./path-utils"
+import {ConfigLoader} from "./config/config-loader.js"
+import type {QuiDocsPluginOptions} from "./config/index.js"
+import {fixPath} from "./path-utils.js"
 import {
   CONFIG_VIRTUAL_MODULE_ID,
   EXPORTS_VIRTUAL_MODULE_ID,

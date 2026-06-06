@@ -2,17 +2,14 @@
   "name": "@qualcomm-ui/react-mdx",
   "version": "2.9.6",
   "description": "React components and utilities for MDX documentation sites based on QUI Docs",
-  "author": "Ryan Bower",
   "license": "BSD-3-Clause-Clear",
+  "author": "Ryan Bower",
   "repository": "https://github.com/qualcomm/qualcomm-ui",
-  "publishConfig": {
-    "access": "public"
-  },
-  "type": "module",
   "files": [
     "dist",
     "package.json"
   ],
+  "type": "module",
   "types": "./dist/stub.d.ts",
   "exports": {
     "./*": {
@@ -23,6 +20,9 @@
     "./styles.css": {
       "style": "./dist/all.min.css"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "build": "run-s clean build:js build:css build:ts",
@@ -105,8 +105,8 @@
     "lucide-react": ">=0.483.0 <2",
     "react": ">=19.0.0",
     "react-dom": ">=19.0.0",
-    "react-simple-code-editor": ">=0.14.1",
     "react-shiki": ">=0.8.0",
+    "react-simple-code-editor": ">=0.14.1",
     "shiki": ">=3.13.0",
     "sucrase": ">=3.35.0"
   },

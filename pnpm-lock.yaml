@@ -82,17 +82,17 @@ catalogs:
       specifier: 3.1.1
       version: 3.1.1
     '@qualcomm-ui/cli':
-      specifier: 1.0.6
-      version: 1.0.6
+      specifier: 1.0.7
+      version: 1.0.7
     '@qualcomm-ui/css-utils':
-      specifier: 1.1.0
-      version: 1.1.0
+      specifier: 1.1.1
+      version: 1.1.1
     '@qualcomm-ui/tsconfig':
-      specifier: 2.0.0
-      version: 2.0.0
+      specifier: 2.1.0
+      version: 2.1.0
     '@qualcomm-ui/vite':
-      specifier: 1.1.0
-      version: 1.1.0
+      specifier: 1.1.1
+      version: 1.1.1
     '@react-router/dev':
       specifier: 7.16.0
       version: 7.16.0
@@ -258,8 +258,8 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0
       '@qualcomm-ui/changesets-cli':
-        specifier: ^1.2.0
-        version: 1.2.0
+        specifier: ^2.0.0
+        version: 2.0.0
       '@qualcomm-ui/eslint-config-angular':
         specifier: workspace:*
         version: link:packages/configs/eslint-config-angular
@@ -290,6 +290,9 @@ importers:
       '@qualcomm-ui/tailwind-plugin':
         specifier: workspace:*
         version: link:packages/common/tailwind-plugin
+      '@qualcomm-ui/utils':
+        specifier: workspace:*
+        version: link:packages/common/utils
       '@types/node':
         specifier: 'catalog:'
         version: 24.9.2
@@ -314,6 +317,9 @@ importers:
       eslint:
         specifier: 'catalog:'
         version: 9.39.1(jiti@2.6.1)
+      eslint-plugin-perfectionist:
+        specifier: ^5.9.0
+        version: 5.9.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       execa:
         specifier: 'catalog:'
         version: 9.6.0
@@ -400,22 +406,22 @@ importers:
         version: 3.6.5
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/css-utils':
         specifier: 'catalog:'
-        version: 1.1.0(@commander-js/extra-typings@14.0.0(commander@14.0.2))(cosmiconfig@9.0.0(typescript@5.9.3))
+        version: 1.1.1(@commander-js/extra-typings@14.0.0(commander@14.0.2))(cosmiconfig@9.0.0(typescript@5.9.3))
       '@qualcomm-ui/dom':
         specifier: workspace:^1.1.3
         version: link:../dom
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/utils':
         specifier: workspace:^1.3.1
         version: link:../utils
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.9.2)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.9.2)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       '@types/node':
         specifier: 'catalog:'
         version: 24.9.2
@@ -448,16 +454,16 @@ importers:
         version: 1.7.4
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/utils':
         specifier: workspace:^1.3.1
         version: link:../utils
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.9.2)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.9.2)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       '@types/node':
         specifier: 'catalog:'
         version: 24.9.2
@@ -478,16 +484,16 @@ importers:
     devDependencies:
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/typedoc-common':
         specifier: workspace:^1.0.7
         version: link:../typedoc-common
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       fuzzysort:
         specifier: ^3.0.1
         version: 3.1.0
@@ -605,13 +611,13 @@ importers:
     devDependencies:
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/mdx-common':
         specifier: workspace:^2.4.1
         version: link:../mdx-common
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/typedoc-common':
         specifier: workspace:^1.0.7
         version: link:../typedoc-common
@@ -620,7 +626,7 @@ importers:
         version: link:../utils
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       '@types/hast':
         specifier: ^3.0.4
         version: 3.0.4
@@ -708,13 +714,13 @@ importers:
     devDependencies:
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.9.2)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.9.2)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       '@types/node':
         specifier: 'catalog:'
         version: 24.9.2
@@ -753,22 +759,22 @@ importers:
         version: 0.31.0
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/core':
         specifier: workspace:^1.11.4
         version: link:../core
       '@qualcomm-ui/css-utils':
         specifier: 'catalog:'
-        version: 1.1.0(@commander-js/extra-typings@14.0.0(commander@14.0.2))(cosmiconfig@9.0.0(typescript@5.9.3))
+        version: 1.1.1(@commander-js/extra-typings@14.0.0(commander@14.0.2))(cosmiconfig@9.0.0(typescript@5.9.3))
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/utils':
         specifier: workspace:^1.3.1
         version: link:../utils
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.9.2)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.9.2)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       '@types/culori':
         specifier: ^4.0.0
         version: 4.0.1
@@ -825,16 +831,16 @@ importers:
     devDependencies:
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/css-utils':
         specifier: 'catalog:'
-        version: 1.1.0(@commander-js/extra-typings@14.0.0(commander@14.0.2))(cosmiconfig@9.0.0(typescript@5.9.3))
+        version: 1.1.1(@commander-js/extra-typings@14.0.0(commander@14.0.2))(cosmiconfig@9.0.0(typescript@5.9.3))
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       shx:
         specifier: 'catalog:'
         version: 0.4.0
@@ -855,7 +861,7 @@ importers:
     dependencies:
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       typescript:
         specifier: '>=5.3.3'
         version: 5.9.3
@@ -871,10 +877,10 @@ importers:
         version: 14.0.0(commander@14.0.2)
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/typedoc-common':
         specifier: workspace:^1.0.7
         version: link:../typedoc-common
@@ -931,13 +937,13 @@ importers:
     devDependencies:
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       chalk:
         specifier: 'catalog:'
         version: 5.6.2
@@ -958,13 +964,13 @@ importers:
     devDependencies:
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.9.2)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.9.2)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       '@types/node':
         specifier: 'catalog:'
         version: 24.9.2
@@ -1010,10 +1016,10 @@ importers:
         version: 1.0.0
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@typescript-eslint/eslint-plugin':
         specifier: 'catalog:'
         version: 8.58.2(@typescript-eslint/parser@8.58.2(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
@@ -1050,10 +1056,10 @@ importers:
     devDependencies:
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@typescript-eslint/rule-tester':
         specifier: 'catalog:'
         version: 8.58.2(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
@@ -1084,13 +1090,13 @@ importers:
         version: 1.0.0
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       cross-env:
         specifier: ^10.1.0
         version: 10.1.0
@@ -1168,10 +1174,10 @@ importers:
         version: 1.0.0
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@typescript-eslint/eslint-plugin':
         specifier: 'catalog:'
         version: 8.58.2(@typescript-eslint/parser@8.58.2(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
@@ -1244,10 +1250,10 @@ importers:
         version: 1.0.0
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@stylistic/eslint-plugin':
         specifier: 5.2.0
         version: 5.2.0(eslint@9.39.1(jiti@2.6.1))
@@ -1281,13 +1287,13 @@ importers:
         version: 1.0.0
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       '@typescript-eslint/rule-tester':
         specifier: 'catalog:'
         version: 8.58.2(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
@@ -1326,10 +1332,10 @@ importers:
         version: 1.0.0
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@typescript-eslint/rule-tester':
         specifier: 'catalog:'
         version: 8.58.2(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
@@ -1354,13 +1360,13 @@ importers:
         version: 1.0.0
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       '@typescript-eslint/rule-tester':
         specifier: 'catalog:'
         version: 8.58.2(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
@@ -1393,10 +1399,10 @@ importers:
     devDependencies:
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       oxfmt:
         specifier: 'catalog:'
         version: 0.53.0
@@ -1408,13 +1414,22 @@ importers:
     devDependencies:
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
+      '@qualcomm-ui/utils':
+        specifier: workspace:*
+        version: link:../../common/utils
+      '@qualcomm-ui/vite':
+        specifier: 'catalog:'
+        version: 1.1.1(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       cross-env:
         specifier: ^10.1.0
         version: 10.1.0
+      eslint-plugin-perfectionist:
+        specifier: ^5.9.0
+        version: 5.9.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       npm-run-all2:
         specifier: 'catalog:'
         version: 8.0.4
@@ -1424,15 +1439,21 @@ importers:
       oxlint-tsgolint:
         specifier: 0.22.1
         version: 0.22.1
+      playwright:
+        specifier: ^1.60.0
+        version: 1.60.0
       shx:
         specifier: 'catalog:'
         version: 0.4.0
+      tsx:
+        specifier: 'catalog:'
+        version: 4.21.0
       typescript:
         specifier: 'catalog:'
         version: 5.9.3
-      vitest:
+      vite:
         specifier: 'catalog:'
-        version: 4.1.6(@types/node@24.10.1)(@vitest/browser-playwright@4.1.6)(@vitest/coverage-v8@4.1.6)(@vitest/ui@4.1.6)(jsdom@24.1.3)(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3)
 
   packages/debug-apps/angular-csr:
     dependencies:
@@ -1514,7 +1535,7 @@ importers:
         version: 21.2.14(@angular/compiler@21.2.14)(typescript@5.9.3)
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       typescript:
         specifier: 'catalog:'
         version: 5.9.3
@@ -1771,7 +1792,7 @@ importers:
         version: link:../../common/mdx-vite
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@react-router/dev':
         specifier: 'catalog:'
         version: 7.16.0(@react-router/serve@7.16.0(react-router@7.16.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3))(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(react-router@7.16.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(typescript@5.9.3)(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))(yaml@2.8.3)
@@ -2078,7 +2099,7 @@ importers:
         version: link:../../common/mdx-vite
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@react-router/dev':
         specifier: 'catalog:'
         version: 7.16.0(@react-router/serve@7.16.0(react-router@7.16.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3))(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(react-router@7.16.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(typescript@5.9.3)(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))(yaml@2.8.3)
@@ -2406,7 +2427,7 @@ importers:
         version: link:../../common/mdx-vite
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@react-router/dev':
         specifier: 'catalog:'
         version: 7.16.0(@react-router/serve@7.16.0(react-router@7.16.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3))(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(react-router@7.16.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(typescript@5.9.3)(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))(yaml@2.8.3)
@@ -2635,7 +2656,7 @@ importers:
         version: link:../../common/mdx-vite
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@react-router/dev':
         specifier: 'catalog:'
         version: 7.16.0(@react-router/serve@7.16.0(react-router@7.16.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3))(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(react-router@7.16.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(typescript@5.9.3)(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))(yaml@2.8.3)
@@ -2840,7 +2861,7 @@ importers:
         version: link:../../common/mdx-vite
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@react-router/dev':
         specifier: 'catalog:'
         version: 7.16.0(@react-router/serve@7.16.0(react-router@7.16.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3))(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(react-router@7.16.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(typescript@5.9.3)(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))(yaml@2.8.3)
@@ -3087,7 +3108,7 @@ importers:
         version: link:../../common/mdx-vite
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@react-router/dev':
         specifier: 'catalog:'
         version: 7.16.0(@react-router/serve@7.16.0(react-router@7.16.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3))(@types/node@24.9.2)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(react-router@7.16.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(typescript@5.9.3)(vite@8.0.8(@types/node@24.9.2)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))(yaml@2.8.3)
@@ -3322,7 +3343,7 @@ importers:
         version: link:../../common/mdx-vite
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@react-router/dev':
         specifier: 'catalog:'
         version: 7.16.0(@react-router/serve@7.16.0(react-router@7.16.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3))(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(react-router@7.16.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(typescript@5.9.3)(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))(yaml@2.8.3)
@@ -3485,7 +3506,7 @@ importers:
         version: link:../angular-core
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/core':
         specifier: workspace:^1.11.4
         version: link:../../common/core
@@ -3500,7 +3521,7 @@ importers:
         version: link:../../common/tailwind-plugin
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/utils':
         specifier: workspace:^1.3.1
         version: link:../../common/utils
@@ -3656,7 +3677,7 @@ importers:
         version: 0.21.2(@rspack/core@1.6.4(@swc/helpers@0.5.17))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.9.3)(webpack@5.105.2(esbuild@0.27.3))
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/core':
         specifier: workspace:^1.11.4
         version: link:../../common/core
@@ -3668,7 +3689,7 @@ importers:
         version: link:../../common/tailwind-plugin
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/utils':
         specifier: workspace:^1.3.1
         version: link:../../common/utils
@@ -3749,7 +3770,7 @@ importers:
         version: 1.4.4
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/core':
         specifier: workspace:^1.11.4
         version: link:../../common/core
@@ -3767,13 +3788,13 @@ importers:
         version: link:../react-test-utils
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/utils':
         specifier: workspace:^1.3.1
         version: link:../../common/utils
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       '@rolldown/plugin-babel':
         specifier: 'catalog:'
         version: 0.2.3(@babel/core@7.29.0)(@babel/plugin-transform-runtime@7.29.0(@babel/core@7.29.0))(@babel/runtime@7.29.2)(rolldown@1.0.0-rc.15)(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
@@ -3866,7 +3887,7 @@ importers:
         version: 0.27.16(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/core':
         specifier: workspace:^1.11.4
         version: link:../../common/core
@@ -3878,13 +3899,13 @@ importers:
         version: link:../react-test-utils
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/utils':
         specifier: workspace:^1.3.1
         version: link:../../common/utils
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       '@rolldown/plugin-babel':
         specifier: 'catalog:'
         version: 0.2.3(@babel/core@7.29.0)(@babel/plugin-transform-runtime@7.29.0(@babel/core@7.29.0))(@babel/runtime@7.29.2)(rolldown@1.0.0-rc.15)(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
@@ -3968,13 +3989,13 @@ importers:
         version: 0.27.16(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/core':
         specifier: workspace:*
         version: link:../../common/core
       '@qualcomm-ui/css-utils':
         specifier: 'catalog:'
-        version: 1.1.0(@commander-js/extra-typings@14.0.0(commander@14.0.2))(cosmiconfig@9.0.0(typescript@5.9.3))
+        version: 1.1.1(@commander-js/extra-typings@14.0.0(commander@14.0.2))(cosmiconfig@9.0.0(typescript@5.9.3))
       '@qualcomm-ui/dom':
         specifier: workspace:*
         version: link:../../common/dom
@@ -3998,13 +4019,13 @@ importers:
         version: link:../react-test-utils
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/utils':
         specifier: workspace:*
         version: link:../../common/utils
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       '@types/react':
         specifier: 'catalog:'
         version: 19.2.7
@@ -4074,13 +4095,13 @@ importers:
         version: 3.1.1(@types/react@19.2.7)(react@19.2.4)
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/core':
         specifier: workspace:^1.11.4
         version: link:../../common/core
       '@qualcomm-ui/css-utils':
         specifier: 'catalog:'
-        version: 1.1.0(@commander-js/extra-typings@14.0.0(commander@14.0.2))(cosmiconfig@9.0.0(typescript@5.9.3))
+        version: 1.1.1(@commander-js/extra-typings@14.0.0(commander@14.0.2))(cosmiconfig@9.0.0(typescript@5.9.3))
       '@qualcomm-ui/dom':
         specifier: workspace:^1.1.3
         version: link:../../common/dom
@@ -4101,7 +4122,7 @@ importers:
         version: link:../react-test-utils
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/typedoc-common':
         specifier: workspace:^1.0.7
         version: link:../../common/typedoc-common
@@ -4110,7 +4131,7 @@ importers:
         version: link:../../common/utils
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       '@rolldown/plugin-babel':
         specifier: 'catalog:'
         version: 0.2.3(@babel/core@7.29.0)(@babel/plugin-transform-runtime@7.29.0(@babel/core@7.29.0))(@babel/runtime@7.29.2)(rolldown@1.0.0-rc.15)(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
@@ -4205,7 +4226,7 @@ importers:
     devDependencies:
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/mdx-common':
         specifier: workspace:^2.4.1
         version: link:../../common/mdx-common
@@ -4214,10 +4235,10 @@ importers:
         version: link:../../common/mdx-vite
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.9.2)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.9.2)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       '@types/node':
         specifier: 'catalog:'
         version: 24.9.2
@@ -4262,13 +4283,13 @@ importers:
         version: 7.1.1
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/core':
         specifier: workspace:^1.11.4
         version: link:../../common/core
       '@qualcomm-ui/css-utils':
         specifier: 'catalog:'
-        version: 1.1.0(@commander-js/extra-typings@14.0.0(commander@14.0.2))(cosmiconfig@9.0.0(typescript@5.9.3))
+        version: 1.1.1(@commander-js/extra-typings@14.0.0(commander@14.0.2))(cosmiconfig@9.0.0(typescript@5.9.3))
       '@qualcomm-ui/qds-core':
         specifier: workspace:^1.29.2
         version: link:../../common/qds-core
@@ -4286,13 +4307,13 @@ importers:
         version: link:../react-test-utils
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/utils':
         specifier: workspace:^1.3.1
         version: link:../../common/utils
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       '@tailwindcss/vite':
         specifier: 'catalog:'
         version: 4.2.4(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
@@ -4430,7 +4451,7 @@ importers:
         version: 1.0.0-alpha.6
       '@qualcomm-ui/cli':
         specifier: 'catalog:'
-        version: 1.0.6
+        version: 1.0.7
       '@qualcomm-ui/core':
         specifier: workspace:*
         version: link:../../common/core
@@ -4442,10 +4463,10 @@ importers:
         version: link:../../common/tailwind-plugin
       '@qualcomm-ui/tsconfig':
         specifier: 'catalog:'
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.1.0(typescript@5.9.3)
       '@qualcomm-ui/vite':
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 1.1.1(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       '@tailwindcss/vite':
         specifier: 'catalog:'
         version: 4.2.4(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
@@ -7507,28 +7528,28 @@ packages:
   '@poppinss/exception@1.2.3':
     resolution: {integrity: sha512-dCED+QRChTVatE9ibtoaxc+WkdzOSjYTKi/+uacHWIsfodVfpsueo3+DKpgU5Px8qXjgmXkSvhXvSCz3fnP9lw==}
 
-  '@qualcomm-ui/changesets-cli@1.2.0':
-    resolution: {integrity: sha512-nzKcrXWRKjZ2RPmEhytkykvXrbTkNg3Kpwc8SqrM7yACMLs1kHsuTkRZUfxHsaAba4ryr+pPcPmAyclkDlS86w==}
+  '@qualcomm-ui/changesets-cli@2.0.0':
+    resolution: {integrity: sha512-dQbS3BqahpsNvQHAeNXl24oYh8XYRCWTD7G24NZY/N/s+rg0oxn8NFF8iyw+rwQkGCNlIeXfB+dLpU2bX7IiTQ==}
     hasBin: true
 
-  '@qualcomm-ui/cli@1.0.6':
-    resolution: {integrity: sha512-/hFScAZVMU9tp2bmkceP7Q2CTRp/8jkV7JZL8ZxpOv5GU+CEmm0KhRevEDri3qdtPsA+dpbQbeF1q4GBmbPhWA==}
+  '@qualcomm-ui/cli@1.0.7':
+    resolution: {integrity: sha512-Wi52OExl/9MoVMZs6NVAl+Ooq7IP7QPkKckETL1u3DsFFqiqptWcuolLxgbsw2LAJotO1XKXgjfZ5/GQ4yszxA==}
     hasBin: true
 
-  '@qualcomm-ui/css-utils@1.1.0':
-    resolution: {integrity: sha512-UXBwGNYgLxsAgHviUi6lyotExJQeHt6rhLQAeDkhfX52tcU8sTWKzWTc79clCs/BSDhzBbWdCkKnWwXvBYOHmQ==}
+  '@qualcomm-ui/css-utils@1.1.1':
+    resolution: {integrity: sha512-OUt03P2x6MCZ4Ti4IixLGuWI3l2T/DhJw3nA16SdeZGzGzCRa/is5Sqfh80GdPzjlWSokVm+PoiGeTQDpKtREg==}
     hasBin: true
     peerDependencies:
       '@commander-js/extra-typings': '>=14.0.0'
       cosmiconfig: '>=9.0.0'
 
-  '@qualcomm-ui/tsconfig@2.0.0':
-    resolution: {integrity: sha512-bUyB40c6qj6thE6dnFChd02jJjYsMUou5Et+dssOMCrZVAOAt+V80HdY9U1+GfXpwUJyUDOClIfRcGG3qhj3NA==}
+  '@qualcomm-ui/tsconfig@2.1.0':
+    resolution: {integrity: sha512-VEIIPAEoi2i5TgVQkrXb4f7+excxl0M3ifhUqsfaQ/BTLYlgB6f4KoaYw3mz9zop0c5yovXMzUMusjVez04u4Q==}
     peerDependencies:
       typescript: '>=5.7.3'
 
-  '@qualcomm-ui/vite@1.1.0':
-    resolution: {integrity: sha512-9w+QX4nIUynjeG7ijjEwqGgWZD5cpTo3H5XJRk5CtRinKVvSSVqW8Nw/5T/yWlxc6BNZQbLGr38+DbACuf7gaQ==}
+  '@qualcomm-ui/vite@1.1.1':
+    resolution: {integrity: sha512-AnQ6GHIzdj7tVXsiOgXZfGncrHOYiRQ+9h0i70hKgZvJJdLz2/L8BVEY/AlS3FmoFTQCtepif3n3VVRHLzKkMw==}
     peerDependencies:
       vite: '>=8.0.0'
 
@@ -10709,6 +10730,12 @@ packages:
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       eslint: '>=8.45.0'
+
+  eslint-plugin-perfectionist@5.9.0:
+    resolution: {integrity: sha512-8TWzg02zmnBdZwCkWLi8jhzqXI+fE7Z/RwV8SL6xD45tJ8Bp3wGuYL2XtQgfe/Wd0eBqOUX+s6ey73IyszvKTA==}
+    engines: {node: ^20.0.0 || >=22.0.0}
+    peerDependencies:
+      eslint: ^8.45.0 || ^9.0.0 || ^10.0.0
 
   eslint-plugin-prettier@5.5.4:
     resolution: {integrity: sha512-swNtI95SToIz05YINMA6Ox5R057IMAmWZ26GqPxusAp1TZzj+IdY9tXNWWD3vkF/wEqydCONcwjTFpxybBqZsg==}
@@ -17002,7 +17029,7 @@ snapshots:
       ng-packagr: 21.2.0(@angular/compiler-cli@21.2.14(@angular/compiler@21.2.14)(typescript@5.9.3))(tailwindcss@4.2.4)(tslib@2.5.3)(typescript@5.9.3)
       postcss: 8.5.10
       tailwindcss: 4.2.4
-      vitest: 4.1.6(@types/node@24.10.1)(@vitest/browser-playwright@4.1.6)(@vitest/coverage-v8@4.1.6)(@vitest/ui@4.1.6)(jsdom@24.1.3)(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+      vitest: 4.1.6(@types/node@24.10.1)(@vitest/browser-playwright@4.1.6)(@vitest/coverage-v8@4.1.6)(@vitest/ui@4.1.6)(jsdom@24.1.3)(vite@7.3.2(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
     transitivePeerDependencies:
       - '@emnapi/core'
       - '@emnapi/runtime'
@@ -20303,30 +20330,30 @@ snapshots:
 
   '@poppinss/exception@1.2.3': {}
 
-  '@qualcomm-ui/changesets-cli@1.2.0':
+  '@qualcomm-ui/changesets-cli@2.0.0':
     dependencies:
       '@actions/core': 1.11.1
       '@manypkg/get-packages': 3.1.0
       '@octokit/rest': 22.0.1
       ts-morph: 25.0.1
 
-  '@qualcomm-ui/cli@1.0.6': {}
+  '@qualcomm-ui/cli@1.0.7': {}
 
-  '@qualcomm-ui/css-utils@1.1.0(@commander-js/extra-typings@14.0.0(commander@14.0.2))(cosmiconfig@9.0.0(typescript@5.9.3))':
+  '@qualcomm-ui/css-utils@1.1.1(@commander-js/extra-typings@14.0.0(commander@14.0.2))(cosmiconfig@9.0.0(typescript@5.9.3))':
     dependencies:
       '@commander-js/extra-typings': 14.0.0(commander@14.0.2)
       cosmiconfig: 9.0.0(typescript@5.9.3)
 
-  '@qualcomm-ui/tsconfig@2.0.0(typescript@5.9.3)':
+  '@qualcomm-ui/tsconfig@2.1.0(typescript@5.9.3)':
     dependencies:
       typescript: 5.9.3
 
-  '@qualcomm-ui/vite@1.1.0(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))':
+  '@qualcomm-ui/vite@1.1.1(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))':
     dependencies:
       chokidar: 4.0.3
       vite: 8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3)
 
-  '@qualcomm-ui/vite@1.1.0(vite@8.0.8(@types/node@24.9.2)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))':
+  '@qualcomm-ui/vite@1.1.1(vite@8.0.8(@types/node@24.9.2)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))':
     dependencies:
       chokidar: 4.0.3
       vite: 8.0.8(@types/node@24.9.2)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3)
@@ -22274,6 +22301,20 @@ snapshots:
       '@rolldown/plugin-babel': 0.2.3(@babel/core@7.29.0)(@babel/plugin-transform-runtime@7.29.0(@babel/core@7.29.0))(@babel/runtime@7.29.2)(rolldown@1.0.0-rc.15)(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
       babel-plugin-react-compiler: 1.0.0
 
+  '@vitest/browser-playwright@4.1.6(playwright@1.60.0)(vite@7.3.2(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))(vitest@4.1.6)':
+    dependencies:
+      '@vitest/browser': 4.1.6(vite@7.3.2(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))(vitest@4.1.6)
+      '@vitest/mocker': 4.1.6(vite@7.3.2(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+      playwright: 1.60.0
+      tinyrainbow: 3.1.0
+      vitest: 4.1.6(@types/node@24.10.1)(@vitest/browser-playwright@4.1.6)(@vitest/coverage-v8@4.1.6)(@vitest/ui@4.1.6)(jsdom@24.1.3)(vite@7.3.2(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+    transitivePeerDependencies:
+      - bufferutil
+      - msw
+      - utf-8-validate
+      - vite
+    optional: true
+
   '@vitest/browser-playwright@4.1.6(playwright@1.60.0)(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))(vitest@4.1.6)':
     dependencies:
       '@vitest/browser': 4.1.6(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))(vitest@4.1.6)
@@ -22299,6 +22340,24 @@ snapshots:
       - msw
       - utf-8-validate
       - vite
+
+  '@vitest/browser@4.1.6(vite@7.3.2(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))(vitest@4.1.6)':
+    dependencies:
+      '@blazediff/core': 1.9.1
+      '@vitest/mocker': 4.1.6(vite@7.3.2(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+      '@vitest/utils': 4.1.6
+      magic-string: 0.30.21
+      pngjs: 7.0.0
+      sirv: 3.0.2
+      tinyrainbow: 3.1.0
+      vitest: 4.1.6(@types/node@24.10.1)(@vitest/browser-playwright@4.1.6)(@vitest/coverage-v8@4.1.6)(@vitest/ui@4.1.6)(jsdom@24.1.3)(vite@7.3.2(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+      ws: 8.20.0
+    transitivePeerDependencies:
+      - bufferutil
+      - msw
+      - utf-8-validate
+      - vite
+    optional: true
 
   '@vitest/browser@4.1.6(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))(vitest@4.1.6)':
     dependencies:
@@ -22358,6 +22417,15 @@ snapshots:
       '@vitest/utils': 4.1.6
       chai: 6.2.2
       tinyrainbow: 3.1.0
+
+  '@vitest/mocker@4.1.6(vite@7.3.2(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))':
+    dependencies:
+      '@vitest/spy': 4.1.6
+      estree-walker: 3.0.3
+      magic-string: 0.30.21
+    optionalDependencies:
+      vite: 7.3.2(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3)
+    optional: true
 
   '@vitest/mocker@4.1.6(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))':
     dependencies:
@@ -24193,6 +24261,15 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.46.4
       '@typescript-eslint/utils': 8.48.1(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
+      eslint: 9.39.1(jiti@2.6.1)
+      natural-orderby: 5.0.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+
+  eslint-plugin-perfectionist@5.9.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3):
+    dependencies:
+      '@typescript-eslint/utils': 8.58.2(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       eslint: 9.39.1(jiti@2.6.1)
       natural-orderby: 5.0.0
     transitivePeerDependencies:
@@ -30640,6 +30717,38 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.7
       '@types/react-dom': 19.2.3(@types/react@19.2.7)
+
+  vitest@4.1.6(@types/node@24.10.1)(@vitest/browser-playwright@4.1.6)(@vitest/coverage-v8@4.1.6)(@vitest/ui@4.1.6)(jsdom@24.1.3)(vite@7.3.2(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3)):
+    dependencies:
+      '@vitest/expect': 4.1.6
+      '@vitest/mocker': 4.1.6(vite@7.3.2(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))
+      '@vitest/pretty-format': 4.1.6
+      '@vitest/runner': 4.1.6
+      '@vitest/snapshot': 4.1.6
+      '@vitest/spy': 4.1.6
+      '@vitest/utils': 4.1.6
+      es-module-lexer: 2.0.0
+      expect-type: 1.3.0
+      magic-string: 0.30.21
+      obug: 2.1.1
+      pathe: 2.0.3
+      picomatch: 4.0.4
+      std-env: 4.0.0
+      tinybench: 2.9.0
+      tinyexec: 1.0.2
+      tinyglobby: 0.2.15
+      tinyrainbow: 3.1.0
+      vite: 7.3.2(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3)
+      why-is-node-running: 2.3.0
+    optionalDependencies:
+      '@types/node': 24.10.1
+      '@vitest/browser-playwright': 4.1.6(playwright@1.60.0)(vite@7.3.2(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.32.0)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3))(vitest@4.1.6)
+      '@vitest/coverage-v8': 4.1.6(@vitest/browser@4.1.6)(vitest@4.1.6)
+      '@vitest/ui': 4.1.6(vitest@4.1.6)
+      jsdom: 24.1.3
+    transitivePeerDependencies:
+      - msw
+    optional: true
 
   vitest@4.1.6(@types/node@24.10.1)(@vitest/browser-playwright@4.1.6)(@vitest/coverage-v8@4.1.6)(@vitest/ui@4.1.6)(jsdom@24.1.3)(vite@8.0.8(@types/node@24.10.1)(esbuild@0.27.3)(jiti@2.6.1)(less@4.4.2)(sass@1.97.3)(stylus@0.62.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.3)):
     dependencies:

@@ -1,3 +1,4 @@
+// oxlint-disable import/first
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 for (const pkgName of [
@@ -77,7 +78,17 @@ export default defineConfig(
     },
   },
   {
-    extends: [],
+    extends: [
+      // ...quiEslintTs.configs.recommended
+    ],
+    files: ["scripts/*.ts"],
+  },
+  {
+    extends: [
+      // quiEslintTs.configs.base,
+      // quiEslintTs.configs.sortKeys,
+      // quiEslintTs.configs.styleGuide,
+    ],
     files: [
       "{packages,scripts}/**/*.{jsx,js,mjs,cjs}",
       "*.{jsx,js,mjs.cjs}",
@@ -105,7 +116,7 @@ export default defineConfig(
   },
   {
     extends: [
-      quiEslintTs.configs.performance,
+      // quiEslintTs.configs.performance,
       quiEslintAngular.configs.baseTypescript,
       quiEslintAngular.configs.typescript,
     ],
@@ -143,13 +154,16 @@ export default defineConfig(
 
   // TODO: remove when every package is on the performance config.
   {
-    extends: [...quiEslintTs.configs.recommended],
+    extends: [
+      // ...quiEslintTs.configs.recommended
+    ],
     files: ["{packages,scripts}/**/*.{ts,tsx}", "*.{ts,tsx}"],
     languageOptions,
   },
 
   {
     extends: [
+      // ...quiEslintTs.configs.recommended,
       quiEslintReact.configs.base,
       quiEslintReact.configs.recommended,
       quiEslintPluginReact.config,
@@ -168,7 +182,10 @@ export default defineConfig(
 
   // gradually adopt strict config
   {
-    extends: [quiEslintTs.configs.performance],
+    extends: [
+      // ...quiEslintTs.configs.recommended,
+      // quiEslintTs.configs.performance,
+    ],
     files: [
       "packages/*/{charts-base,core,eslint-config-qui-boundaries,mdx-vite,typedoc}/**/*.ts",
     ],
@@ -178,9 +195,9 @@ export default defineConfig(
   // strict performance config, enforces strict type exports
   {
     extends: [
-      ...quiEslintTs.configs.recommended,
-      quiEslintTs.configs.performance,
-      quiEslintTs.configs.strictExports,
+      // ...quiEslintTs.configs.recommended,
+      // quiEslintTs.configs.performance,
+      // quiEslintTs.configs.strictExports,
     ],
     files: [
       "packages/*/{dom,qds-core,mdx-common,node-utils,utils,react-test-utils}/**/*.ts",
@@ -191,8 +208,8 @@ export default defineConfig(
   // gradually adopt strict config (react)
   {
     extends: [
-      ...quiEslintTs.configs.recommended,
-      quiEslintTs.configs.performance,
+      // ...quiEslintTs.configs.recommended,
+      // quiEslintTs.configs.performance,
       quiEslintReact.configs.base,
       quiEslintReact.configs.recommended,
     ],

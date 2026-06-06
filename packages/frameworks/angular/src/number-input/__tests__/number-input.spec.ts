@@ -10,11 +10,11 @@ import {render} from "@testing-library/angular"
 import {describe, expect, test, vi} from "vitest"
 import {page, userEvent} from "vitest/browser"
 
+import {requiredNumberValidator} from "@qualcomm-ui/angular-core/number-input"
 import {
   NumberInputModule,
   type UnitOption,
 } from "@qualcomm-ui/angular/number-input"
-import {requiredNumberValidator} from "@qualcomm-ui/angular-core/number-input"
 import type {
   NumberInputValueChangeDetails,
   NumberInputValueInvalidDetails,
@@ -87,9 +87,7 @@ const testCases: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [NumberInputModule],
-        template: `
-          <q-number-input [aria-label]="inputLabel" />
-        `,
+        template: ` <q-number-input [aria-label]="inputLabel" /> `,
       })
       class SimpleComponent {
         protected readonly inputLabel = "Amount"
@@ -1072,9 +1070,7 @@ const testCases: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [NumberInputModule],
-        template: `
-          <q-number-input defaultValue="42" [label]="demoLabel" />
-        `,
+        template: ` <q-number-input defaultValue="42" [label]="demoLabel" /> `,
       })
       class SimpleComponent {
         protected readonly demoLabel = demoLabel
@@ -1320,9 +1316,7 @@ const testCases: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [NumberInputModule],
-        template: `
-          <q-number-input defaultValue="5" [label]="demoLabel" />
-        `,
+        template: ` <q-number-input defaultValue="5" [label]="demoLabel" /> `,
       })
       class SimpleComponent {
         protected readonly demoLabel = demoLabel

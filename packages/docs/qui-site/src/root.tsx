@@ -1,5 +1,3 @@
-import "./globals.css"
-
 import {useEffect, useMemo, useState} from "react"
 
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query"
@@ -39,6 +37,8 @@ import {
 
 import {AppDocsLayout} from "./components"
 import {siteStateCookie, themeCookie} from "./sessions.server"
+
+import "./globals.css"
 
 const siteDataFallback: SiteData = {navItems: [], pageMap: {}, searchIndex: []}
 

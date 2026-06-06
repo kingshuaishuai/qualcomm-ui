@@ -2,7 +2,6 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 
 import {type RefObject, useMemo, useRef, useState} from "react"
-
 import {flushSync} from "react-dom"
 
 import {createScope} from "@qualcomm-ui/dom/query"

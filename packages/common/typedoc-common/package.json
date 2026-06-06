@@ -2,16 +2,13 @@
   "name": "@qualcomm-ui/typedoc-common",
   "version": "1.0.7",
   "description": "Common types for the QUI typedoc package",
-  "author": "Ryan Bower",
   "license": "BSD-3-Clause-Clear",
+  "author": "Ryan Bower",
   "repository": "https://github.com/qualcomm/qualcomm-ui",
-  "publishConfig": {
-    "access": "public"
-  },
-  "type": "module",
   "files": [
     "dist"
   ],
+  "type": "module",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
@@ -19,6 +16,9 @@
       "import": "./dist/index.js",
       "default": "./dist/index.js"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "build": "run-s clean build:js build:ts",

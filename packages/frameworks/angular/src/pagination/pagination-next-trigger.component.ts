@@ -12,9 +12,7 @@ import {useQdsPaginationContext} from "./qds-pagination-context.service"
 @Component({
   selector: "[q-pagination-next-trigger]",
   standalone: false,
-  template: `
-    <svg [qIcon]="icon()" />
-  `,
+  template: ` <svg [qIcon]="icon()" /> `,
 })
 export class PaginationNextTriggerComponent extends CorePaginationNextTriggerDirective {
   /**

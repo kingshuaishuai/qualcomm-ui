@@ -330,9 +330,7 @@ const tests: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [InlineNotificationModule],
-        template: `
-          <div q-inline-notification [label]="demoLabel()"></div>
-        `,
+        template: ` <div q-inline-notification [label]="demoLabel()"></div> `,
       })
       class SimpleComponent {
         protected readonly demoLabel = signal(demoLabel)

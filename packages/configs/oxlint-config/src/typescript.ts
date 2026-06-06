@@ -1,16 +1,7 @@
 // Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 
-import {
-  defineConfig,
-  type DummyRuleMap,
-  type OxlintConfig,
-  type OxlintOverride,
-} from "oxlint"
-
-import {baseOverrides, basePlugins} from "./base.js"
-
-export const typescriptFiles = ["**/*.{ts,tsx,mts,cts}"]
+import {defineConfig, type DummyRuleMap, type OxlintConfig} from "oxlint"
 
 export const typescriptPlugins: NonNullable<OxlintConfig["plugins"]> = [
   "typescript",
@@ -20,57 +11,6 @@ export const typescriptPlugins: NonNullable<OxlintConfig["plugins"]> = [
 ]
 
 export const typescriptRules: DummyRuleMap = {
-  curly: "error",
-  eqeqeq: ["error", "always", {null: "ignore"}],
-  "no-array-constructor": "error",
-  "no-case-declarations": "off",
-  "no-const-assign": "error",
-  "no-duplicate-imports": "off",
-  "no-implied-eval": "error",
-  "no-inner-declarations": "off",
-  "no-prototype-builtins": "off",
-  "no-restricted-imports": [
-    "error",
-    {
-      patterns: [
-        {
-          group: ["@qualcomm-ui/*/src/**/*"],
-          message:
-            "Relative imports from src directories are not allowed. Please ensure that the targeted dependency is exported properly from its module",
-        },
-        {
-          group: ["@qualcomm-ui/*/src"],
-          message: 'Remove "src" (import directly)',
-        },
-      ],
-    },
-  ],
-  "no-throw-literal": "off",
-  "no-undef": "off",
-  "no-unused-expressions": "off",
-  "no-unused-vars": "off",
-  "no-useless-concat": "error",
-  "no-useless-escape": "warn",
-  "no-var": "error",
-  "object-shorthand": "error",
-  "prefer-const": "error",
-  "prefer-promise-reject-errors": "off",
-  "prefer-template": "error",
-  "require-await": "off",
-  "sort-imports": [
-    "error",
-    {
-      ignoreCase: true,
-      ignoreDeclarationSort: true,
-    },
-  ],
-  "sort-keys": [
-    "error",
-    "asc",
-    {
-      natural: true,
-    },
-  ],
   "typescript/await-thenable": "error",
   "typescript/ban-ts-comment": "warn",
   "typescript/consistent-type-exports": [
@@ -150,18 +90,7 @@ export const typescriptRules: DummyRuleMap = {
   "typescript/unbound-method": "off",
 }
 
-export const typescriptOverrides: OxlintOverride[] = [
-  {
-    files: typescriptFiles,
-    plugins: typescriptPlugins,
-    rules: typescriptRules,
-  },
-]
-
 export const typescriptConfig: OxlintConfig = defineConfig({
-  categories: {
-    correctness: "warn",
-  },
-  overrides: [...baseOverrides, ...typescriptOverrides],
-  plugins: [...new Set([...basePlugins, ...typescriptPlugins])],
+  plugins: ["typescript", "import", "promise", "node"],
+  rules: typescriptRules,
 })

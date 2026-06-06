@@ -9,9 +9,7 @@ describe("Kbd", () => {
   test("renders keyboard shortcut content with kbd bindings", async () => {
     @Component({
       imports: [KbdDirective],
-      template: `
-        <kbd q-kbd>Ctrl+K</kbd>
-      `,
+      template: ` <kbd q-kbd>Ctrl+K</kbd> `,
     })
     class KbdComponent {}
 

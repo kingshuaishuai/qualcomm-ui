@@ -36,9 +36,7 @@ import {PortalContextService} from "./portal-context.service"
 @Component({
   imports: [CommonModule, PortalModule],
   selector: "q-portal",
-  template: `
-    <ng-template #tpl><ng-content /></ng-template>
-  `,
+  template: ` <ng-template #tpl><ng-content /></ng-template> `,
 })
 export class PortalComponent implements OnInit, AfterViewInit {
   /**

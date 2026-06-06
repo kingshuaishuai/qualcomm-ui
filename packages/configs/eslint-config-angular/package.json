@@ -2,19 +2,14 @@
   "name": "@qualcomm-ui/eslint-config-angular",
   "version": "1.1.1",
   "description": "QUI ESLint config for consistent Angular code formatting",
-  "author": "Ryan Bower",
-  "license": "BSD-3-Clause-Clear",
-  "repository": "https://github.com/qualcomm/qualcomm-ui",
-  "publishConfig": {
-    "access": "public"
-  },
   "keywords": [
-    "eslint",
     "config",
+    "eslint",
     "react"
   ],
-  "type": "module",
-  "sideEffects": false,
+  "license": "BSD-3-Clause-Clear",
+  "author": "Ryan Bower",
+  "repository": "https://github.com/qualcomm/qualcomm-ui",
   "files": [
     "index.d.ts",
     "index.js",
@@ -25,9 +20,14 @@
     "template-self-closing-tags.js",
     "typescript.js"
   ],
+  "type": "module",
+  "sideEffects": false,
   "main": "index.js",
   "module": "index.js",
   "types": "index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "prepublishOnly": "qui-cli pre-publish",
     "postpublish": "qui-cli post-publish"

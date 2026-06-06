@@ -40,9 +40,7 @@ import {
       }
     `,
   ],
-  template: `
-    <ng-content />
-  `,
+  template: ` <ng-content /> `,
 })
 export class MenuComponent
   extends CoreMenuRootDirective

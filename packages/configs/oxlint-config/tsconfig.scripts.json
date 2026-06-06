@@ -1,0 +1,18 @@
+{
+  "extends": "@qualcomm-ui/tsconfig/tsconfig.strict.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "./scripts",
+    "module": "NodeNext",
+    "outDir": "./dist",
+    "emitDeclarationOnly": false,
+    "moduleResolution": "NodeNext",
+    "tsBuildInfoFile": "node_modules/.tmp/.tsbuildinfo-scripts"
+  },
+  "include": ["./scripts"],
+  "references": [
+    {
+      "path": "./tsconfig.lib.json"
+    }
+  ]
+}

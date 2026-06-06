@@ -2,7 +2,6 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 
 import {useRef, useState} from "react"
-
 import {flushSync} from "react-dom"
 
 import {useSafeLayoutEffect} from "@qualcomm-ui/react-core/effects"
