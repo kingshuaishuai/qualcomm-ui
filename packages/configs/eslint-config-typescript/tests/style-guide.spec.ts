@@ -104,7 +104,9 @@ describe("styleGuide diagnostics", () => {
       styleGuideConfig,
     )
 
-    expect(result.messages.map((message) => [message.ruleId, message.severity])).toEqual([
+    expect(
+      result.messages.map((message) => [message.ruleId, message.severity]),
+    ).toEqual([
       ["comment-length/limit-single-line-comments", 1],
       ["no-useless-escape", 1],
     ])

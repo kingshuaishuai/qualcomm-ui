@@ -1,11 +1,10 @@
+import type {ConfigObject} from "@eslint/core"
 import {ESLint} from "eslint"
 import {createHash} from "node:crypto"
 import {mkdir, writeFile} from "node:fs/promises"
 import {dirname, join} from "node:path"
 
 import typescriptConfig from "../index"
-
-import type {ConfigObject} from "@eslint/core"
 
 type ConfigInput = ConfigObject | ConfigInput[]
 
@@ -15,14 +14,12 @@ interface LintOptions {
   typeAware?: boolean
 }
 
-interface IsolatedRuleConfig {
-  config: ConfigInput
-  ruleId: string
-}
-
 const packageRoot = join(import.meta.dirname, "..")
 
-export const fixtureRoot = join(packageRoot, ".tmp/eslint-config-typescript-tests")
+export const fixtureRoot = join(
+  packageRoot,
+  ".tmp/eslint-config-typescript-tests",
+)
 
 export const dedent = (strings: TemplateStringsArray, ...values: unknown[]) => {
   const raw = String.raw({raw: strings.raw}, ...values)
@@ -40,22 +37,33 @@ export function ruleIds(result: ESLint.LintResult) {
   return result.messages.map((message) => message.ruleId)
 }
 
-export async function lintText(code: string, config: ConfigInput, options: LintOptions = {}) {
-  await ensureTypeAwareFixtureConfig()
-  const filePath = join(
-    fixtureRoot,
-    options.filePath ?? `${createHash("sha256").update(code).digest("hex")}.ts`,
-  )
+export async function lintText(
+  code: string,
+  config: ConfigInput,
+  options: LintOptions = {},
+) {
+  const fixtureHash = createHash("sha256")
+    .update(`${options.filePath ?? "fixture.ts"}\n${code}`)
+    .digest("hex")
+  const typeAwareRoot = join(fixtureRoot, fixtureHash)
+  const filePath = options.typeAware
+    ? join(typeAwareRoot, options.filePath ?? "fixture.ts")
+    : join(fixtureRoot, options.filePath ?? `${fixtureHash}.ts`)
 
   if (options.typeAware) {
     await mkdir(dirname(filePath), {recursive: true})
     await writeFile(filePath, code)
+    await writeTypeAwareFixtureConfig(typeAwareRoot)
   }
 
   const eslint = new ESLint({
     cwd: packageRoot,
     fix: options.fix ?? false,
-    overrideConfig: normalizeConfig(config, options.typeAware ?? false),
+    overrideConfig: normalizeConfig(
+      config,
+      options.typeAware ?? false,
+      typeAwareRoot,
+    ),
     overrideConfigFile: true,
   })
 
@@ -66,24 +74,13 @@ export async function lintText(code: string, config: ConfigInput, options: LintO
   return result
 }
 
-export const configs = typescriptConfig.configs
+export const configs = typescriptConfig.configs as any
 
-export function isolateRule(config: ConfigInput, ruleId: string): ConfigInput {
-  return flattenConfig(config).map((entry) => ({
-    ...entry,
-    rules: entry.rules?.[ruleId] === undefined ? {} : {[ruleId]: entry.rules[ruleId]},
-  }))
-}
-
-export function withBase(config: ConfigInput) {
-  return [configs.base, config]
-}
-
-export function isolatedRuleConfig({config, ruleId}: IsolatedRuleConfig) {
-  return withBase(isolateRule(config, ruleId))
-}
-
-function normalizeConfig(config: ConfigInput, typeAware: boolean) {
+function normalizeConfig(
+  config: ConfigInput,
+  typeAware: boolean,
+  typeAwareRoot: string,
+) {
   const files = ["**/*.ts", "**/*.tsx"]
   const configs = flattenConfig(config).map((entry) => ({...entry, files}))
 
@@ -93,7 +90,7 @@ function normalizeConfig(config: ConfigInput, typeAware: boolean) {
       languageOptions: {
         parserOptions: {
           project: "./tsconfig.json",
-          tsconfigRootDir: fixtureRoot,
+          tsconfigRootDir: typeAwareRoot,
         },
       },
     })
@@ -110,18 +107,10 @@ function flattenConfig(config: ConfigInput): ConfigObject[] {
   return config.flatMap((entry) => flattenConfig(entry))
 }
 
-let fixtureConfigPromise: Promise<void> | undefined
-
-function ensureTypeAwareFixtureConfig() {
-  fixtureConfigPromise ??= writeTypeAwareFixtureConfig()
-
-  return fixtureConfigPromise
-}
-
-async function writeTypeAwareFixtureConfig() {
-  await mkdir(fixtureRoot, {recursive: true})
+async function writeTypeAwareFixtureConfig(typeAwareRoot: string) {
+  await mkdir(typeAwareRoot, {recursive: true})
   await writeFile(
-    join(fixtureRoot, "tsconfig.json"),
+    join(typeAwareRoot, "tsconfig.json"),
     JSON.stringify(
       {
         compilerOptions: {

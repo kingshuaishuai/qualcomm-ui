@@ -68,6 +68,7 @@ async function buildConfigsIfNeeded() {
     "eslint-config-mdx",
     "eslint-plugin-angular",
     "eslint-plugin-react",
+    "oxlint-config",
   ]
 
   await runNodeScript("node_modules/turbo/bin/turbo", [

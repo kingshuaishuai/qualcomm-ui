@@ -77,15 +77,7 @@ export default defineConfig(
     },
   },
   {
-    extends: [...quiEslintTs.configs.recommended],
-    files: ["scripts/*.ts"],
-  },
-  {
-    extends: [
-      quiEslintTs.configs.base,
-      quiEslintTs.configs.sortKeys,
-      quiEslintTs.configs.styleGuide,
-    ],
+    extends: [],
     files: [
       "{packages,scripts}/**/*.{jsx,js,mjs,cjs}",
       "*.{jsx,js,mjs.cjs}",
@@ -97,7 +89,6 @@ export default defineConfig(
   // angular
   {
     extends: [
-      ...quiEslintTs.configs.recommended,
       quiEslintAngular.configs.baseTypescript,
       quiEslintAngular.configs.typescript,
       quiEslintPluginAngular.config,
@@ -114,7 +105,6 @@ export default defineConfig(
   },
   {
     extends: [
-      ...quiEslintTs.configs.recommended,
       quiEslintTs.configs.performance,
       quiEslintAngular.configs.baseTypescript,
       quiEslintAngular.configs.typescript,
@@ -160,7 +150,6 @@ export default defineConfig(
 
   {
     extends: [
-      ...quiEslintTs.configs.recommended,
       quiEslintReact.configs.base,
       quiEslintReact.configs.recommended,
       quiEslintPluginReact.config,
@@ -179,10 +168,7 @@ export default defineConfig(
 
   // gradually adopt strict config
   {
-    extends: [
-      ...quiEslintTs.configs.recommended,
-      quiEslintTs.configs.performance,
-    ],
+    extends: [quiEslintTs.configs.performance],
     files: [
       "packages/*/{charts-base,core,eslint-config-qui-boundaries,mdx-vite,typedoc}/**/*.ts",
     ],

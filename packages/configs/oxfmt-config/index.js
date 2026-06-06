@@ -18,7 +18,7 @@ export default defineConfig({
     commentLineStrategy: "keep",
     descriptionTag: false,
     descriptionWithDot: false,
-    keepUnparsableExampleIndent: true,
+    keepUnparsableExampleIndent: false,
     lineWrappingStyle: "balance",
     preferCodeFences: true,
     separateReturnsFromParam: false,

@@ -51,5 +51,4 @@ describe("jsdoc", () => {
       "jsdoc/check-tag-names",
     ])
   })
-
 })

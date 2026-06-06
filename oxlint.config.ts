@@ -1,16 +1,33 @@
 import {defineConfig} from "oxlint"
 
+import {
+  angularOverrides,
+  angularPlugins,
+} from "@qualcomm-ui/oxlint-config/angular"
+import {baseJsPlugins} from "@qualcomm-ui/oxlint-config/base"
+import {reactOverrides, reactPlugins} from "@qualcomm-ui/oxlint-config/react"
+import {
+  typescriptOverrides,
+  typescriptPlugins,
+} from "@qualcomm-ui/oxlint-config/typescript"
+
 export default defineConfig({
-  categories: {
-    correctness: "warn",
-  },
-  jsPlugins: ["oxlint-plugin-oxfmt"],
-  plugins: ["import"],
+  jsPlugins: baseJsPlugins,
+  overrides: [
+    ...typescriptOverrides,
+    ...reactOverrides.map((override) => ({
+      ...override,
+      files: ["packages/react/**/*.{jsx,tsx}"],
+    })),
+    ...angularOverrides.map((override) => ({
+      ...override,
+      files: ["packages/angular/**/*.ts"],
+    })),
+  ],
+  plugins: [
+    ...new Set([...typescriptPlugins, ...reactPlugins, ...angularPlugins]),
+  ],
   rules: {
-    "eslint/no-unused-vars": "error",
-    "import/newline-after-import": ["error", {count: 1}],
-    "import/no-cycle": [0],
-    "import/no-duplicates": ["error", {"prefer-inline": true}],
-    "oxfmt/format": "warn",
+    "oxfmt/format": "error",
   },
 })
