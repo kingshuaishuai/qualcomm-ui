@@ -35,7 +35,12 @@ import type {
   ComboboxOpenChangeReason,
   ComboboxSchema,
 } from "./combobox.types.js"
-import {domEls, focusInputEl, focusTriggerEl, getItemEl} from "./internal/index.js"
+import {
+  domEls,
+  focusInputEl,
+  focusTriggerEl,
+  getItemEl,
+} from "./internal/index.js"
 
 const {and, not} = createGuards<ComboboxSchema>()
 

@@ -45,7 +45,7 @@ const testCases: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [SwitchModule],
-        template:`<label label="${demoLabel}" q-switch></label>`,
+        template: `<label label="${demoLabel}" q-switch></label>`,
       })
       class SimpleComponent {}
       return SimpleComponent
@@ -83,7 +83,7 @@ const testCases: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [SwitchModule],
-        template:`<label disabled label="${demoLabel}" q-switch></label>`,
+        template: `<label disabled label="${demoLabel}" q-switch></label>`,
       })
       class SimpleComponent {}
       return SimpleComponent
@@ -1149,7 +1149,7 @@ describe("checkbox", () => {
   test("simple component forwards static native aria-label to the generated input", async () => {
     @Component({
       imports: [SwitchModule],
-      template:`<label aria-label="Airplane mode" q-switch></label>`,
+      template: `<label aria-label="Airplane mode" q-switch></label>`,
     })
     class SimpleAriaLabelComponent {}
 
