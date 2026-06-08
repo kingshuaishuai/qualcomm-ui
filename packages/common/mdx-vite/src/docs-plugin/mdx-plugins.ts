@@ -22,7 +22,7 @@ import {
   remarkFrontmatter,
   remarkGfm,
   remarkMdxFrontmatter,
-} from "../exports"
+} from "../exports.js"
 
 import {ConfigLoader, type ConfigLoaderOptions} from "./config/index.js"
 import {
