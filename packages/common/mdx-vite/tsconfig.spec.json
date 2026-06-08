@@ -3,7 +3,8 @@
   "compilerOptions": {
     "composite": true,
     "outDir": "./dist",
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "tsBuildInfoFile": "node_modules/.tmp/tsbuildinfo-spec"
   },
   "include": ["./src/**/__tests__"],
   "references": [
