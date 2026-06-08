@@ -8,7 +8,10 @@ import {
   styleGuideRules,
 } from "@qualcomm-ui/oxlint-config/core"
 import {nodePlugins, nodeRules} from "@qualcomm-ui/oxlint-config/node"
-import {typescriptPlugins} from "@qualcomm-ui/oxlint-config/typescript"
+import {
+  typescriptPlugins,
+  typescriptRules,
+} from "@qualcomm-ui/oxlint-config/typescript"
 import {uniq} from "@qualcomm-ui/utils/array"
 
 export default defineConfig({
@@ -41,6 +44,7 @@ export default defineConfig({
         ...sortRules,
         ...styleGuideRules,
         ...nodeRules,
+        ...typescriptRules,
         ...oxfmtRules,
       },
     },
