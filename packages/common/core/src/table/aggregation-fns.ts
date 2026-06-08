@@ -24,7 +24,10 @@ const min: AggregationFn<any> = (columnId, _leafRows, childRows) => {
 
     if (
       value != null &&
-      (min! > value || (min === undefined && value >= value))
+      (min! > value ||
+        (min === undefined &&
+          typeof value === "number" &&
+          !Number.isNaN(value)))
     ) {
       min = value
     }
@@ -40,7 +43,10 @@ const max: AggregationFn<any> = (columnId, _leafRows, childRows) => {
     const value = row.getValue<number>(columnId)
     if (
       value != null &&
-      (max! < value || (max === undefined && value >= value))
+      (max! < value ||
+        (max === undefined &&
+          typeof value === "number" &&
+          !Number.isNaN(value)))
     ) {
       max = value
     }
@@ -57,7 +63,7 @@ const extent: AggregationFn<any> = (columnId, _leafRows, childRows) => {
     const value = row.getValue<number>(columnId)
     if (value != null) {
       if (min === undefined) {
-        if (value >= value) {
+        if (typeof value === "number" && !Number.isNaN(value)) {
           min = max = value
         }
       } else {

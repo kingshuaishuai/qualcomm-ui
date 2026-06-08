@@ -89,8 +89,3 @@ export const typescriptRules: DummyRuleMap = {
   "typescript/triple-slash-reference": "error",
   "typescript/unbound-method": "off",
 }
-
-export const typescriptConfig: OxlintConfig = defineConfig({
-  plugins: ["typescript", "import", "promise", "node"],
-  rules: typescriptRules,
-})
