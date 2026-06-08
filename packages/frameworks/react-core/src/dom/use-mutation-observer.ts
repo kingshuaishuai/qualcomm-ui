@@ -24,7 +24,7 @@ export function useMutationObserver<TElement extends HTMLElement>(
   callback: MutationCallback,
   options: MutationObserverInit = defaultOptions,
 ) {
-  // @ts-ignore
+  // @ts-expect-error
   useEffect(() => {
     if (ref.current) {
       const observer = new MutationObserver(callback)
