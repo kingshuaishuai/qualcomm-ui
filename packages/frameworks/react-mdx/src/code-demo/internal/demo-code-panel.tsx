@@ -11,7 +11,7 @@ import {Icon} from "@qualcomm-ui/react/icon"
 import {Tab, Tabs} from "@qualcomm-ui/react/tabs"
 import {booleanDataAttr} from "@qualcomm-ui/utils/attributes"
 
-import {DemoStyleToggle} from "./demo-style-toggle"
+import {DemoStyleToggle} from "./demo-style-toggle.js"
 
 export interface DemoCodePanelProps {
   /**

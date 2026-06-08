@@ -11,7 +11,7 @@ import {
 } from "@qualcomm-ui/react-core/system"
 import {Icon} from "@qualcomm-ui/react/icon"
 
-import type {RenderLink} from "../types"
+import type {RenderLink} from "../types.js"
 
 export type AnchorHeaderProps = ElementRenderProp<"span"> & {
   /**

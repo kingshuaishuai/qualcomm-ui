@@ -25,7 +25,7 @@ import {Tab, Tabs} from "@qualcomm-ui/react/tabs"
 import {booleanDataAttr} from "@qualcomm-ui/utils/attributes"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {getDefaultSourceCode} from "./code-demo.utils"
+import {getDefaultSourceCode} from "./code-demo.utils.js"
 
 export interface QdsReactDemoProps extends ComponentPropsWithRef<"div"> {
   /**

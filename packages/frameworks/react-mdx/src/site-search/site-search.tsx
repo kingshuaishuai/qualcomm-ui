@@ -26,9 +26,9 @@ import {HeaderBar} from "@qualcomm-ui/react/header-bar"
 import {Kbd} from "@qualcomm-ui/react/kbd"
 import {TextInput} from "@qualcomm-ui/react/text-input"
 
-import {GroupedResultItem} from "./grouped-result-item"
-import {SearchResultItem} from "./search-result-item"
-import {useGroupedResults} from "./use-grouped-results"
+import {GroupedResultItem} from "./grouped-result-item.js"
+import {SearchResultItem} from "./search-result-item.js"
+import {useGroupedResults} from "./use-grouped-results.js"
 
 interface SiteSearchMobileProps {
   /**
