@@ -1,4 +1,4 @@
-import {HTMLAttributes, ReactNode, useState} from "react"
+import {type HTMLAttributes, type ReactNode, useState} from "react"
 
 import {ChevronRightIcon, ExternalLinkIcon} from "lucide-react"
 

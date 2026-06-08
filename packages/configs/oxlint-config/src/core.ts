@@ -7,11 +7,7 @@
  * their TypeScript equivalent are disabled.
  */
 
-import {
-  type DummyRuleMap,
-  type ExternalPluginEntry,
-  type OxlintConfig,
-} from "oxlint"
+import type {DummyRuleMap, ExternalPluginEntry, OxlintConfig} from "oxlint"
 
 import {importRules} from "./internal/import.js"
 import {oxcRules} from "./internal/oxc.js"

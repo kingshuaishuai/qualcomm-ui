@@ -1,4 +1,4 @@
-import {ReactNode} from "react"
+import type {ReactNode} from "react"
 
 import {AngularLogo} from "@qualcomm-ui/react-mdx/angular-logo"
 import {ReactLogo} from "@qualcomm-ui/react-mdx/react-logo"

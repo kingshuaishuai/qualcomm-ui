@@ -20,7 +20,7 @@ import type {SiteData} from "@qualcomm-ui/mdx-common"
 import {siteData} from "@qualcomm-ui/mdx-vite-plugin"
 import {
   GlobalConfigContextProvider,
-  GlobalConfigContextValue,
+  type GlobalConfigContextValue,
 } from "@qualcomm-ui/react-internal/layout"
 import {
   type DemoSettings,

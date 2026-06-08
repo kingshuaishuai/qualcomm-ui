@@ -1,4 +1,4 @@
-import {ReactNode, useState} from "react"
+import {type ReactNode, useState} from "react"
 
 import {Blocks} from "lucide-react"
 import {
@@ -10,7 +10,7 @@ import {
 import {
   DocsFooter,
   DocsLayout,
-  DocsLayoutSettings,
+  type DocsLayoutSettings,
   MobileSidebar,
 } from "@qualcomm-ui/react-mdx/docs-layout"
 import {Github} from "@qualcomm-ui/react-mdx/icons"

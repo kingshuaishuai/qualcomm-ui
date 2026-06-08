@@ -38,7 +38,7 @@ import {proxyVirtualizer} from "./proxy"
 import type {AngularVirtualizer} from "./types"
 
 export * from "@tanstack/virtual-core"
-export * from "./types"
+export type * from "./types"
 
 function createVirtualizerBase<
   TScrollElement extends Element | Window,
@@ -83,7 +83,7 @@ function createVirtualizerBase<
   let cleanup: () => void | undefined
   afterNextRender({read: () => (virtualizer ?? lazyInit())._didMount()})
 
-  // @ts-ignore use before assign
+  // @ts-expect-error use before assign
   inject(DestroyRef).onDestroy(() => cleanup?.())
 
   return proxyVirtualizer(virtualizerSignal, lazyInit)

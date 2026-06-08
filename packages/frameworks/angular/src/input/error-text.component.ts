@@ -3,7 +3,7 @@
 
 import {Component, input, type OnInit} from "@angular/core"
 
-import {type LucideIcon} from "@qualcomm-ui/angular-core/lucide"
+import type {LucideIcon} from "@qualcomm-ui/angular-core/lucide"
 import {useTrackBindings} from "@qualcomm-ui/angular-core/machine"
 import {IconDirective} from "@qualcomm-ui/angular/icon"
 import {inputClasses} from "@qualcomm-ui/qds-core/input"

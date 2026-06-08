@@ -4,7 +4,7 @@ import {QueryClient, QueryClientProvider} from "@tanstack/react-query"
 import {Provider} from "jotai"
 import {
   Links,
-  LoaderFunction,
+  type LoaderFunction,
   Meta,
   Outlet,
   Scripts,
@@ -13,17 +13,17 @@ import {
   useLocation,
 } from "react-router"
 
-import {SiteData} from "@qualcomm-ui/mdx-common"
+import type {SiteData} from "@qualcomm-ui/mdx-common"
 import {siteData} from "@qualcomm-ui/mdx-vite-plugin"
 import {
   type DemoSettings,
-  PackageManager,
+  type PackageManager,
   SiteContextProvider,
 } from "@qualcomm-ui/react-mdx/context"
 import {
-  DocPropsLayout,
+  type DocPropsLayout,
   PropsLayoutProvider,
-  PropsLayoutState,
+  type PropsLayoutState,
 } from "@qualcomm-ui/react-mdx/typedoc"
 import {
   isTheme,

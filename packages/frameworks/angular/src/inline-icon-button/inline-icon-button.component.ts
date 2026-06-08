@@ -12,11 +12,11 @@ import {
 import type {SignalifyInput} from "@qualcomm-ui/angular-core/signals"
 import {IconDirective} from "@qualcomm-ui/angular/icon"
 import {QuiPreloadDirective} from "@qualcomm-ui/angular/transitions"
-import {
-  type QdsInlineIconButtonApiProps,
-  type QdsInlineIconButtonEmphasis,
-  type QdsInlineIconButtonSize,
-  type QdsInlineIconButtonVariant,
+import type {
+  QdsInlineIconButtonApiProps,
+  QdsInlineIconButtonEmphasis,
+  QdsInlineIconButtonSize,
+  QdsInlineIconButtonVariant,
 } from "@qualcomm-ui/qds-core/inline-icon-button"
 
 import {useInlineIconButtonApi} from "./use-inline-icon-button-api"

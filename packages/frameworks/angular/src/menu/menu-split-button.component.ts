@@ -21,11 +21,11 @@ import {
   provideQdsButtonGroupContext,
   QdsButtonGroupContextService,
 } from "@qualcomm-ui/angular/button"
-import {
-  type QdsButtonDensity,
-  type QdsButtonEmphasis,
-  type QdsButtonSize,
-  type QdsButtonVariant,
+import type {
+  QdsButtonDensity,
+  QdsButtonEmphasis,
+  QdsButtonSize,
+  QdsButtonVariant,
 } from "@qualcomm-ui/qds-core/button"
 import {getQdsSplitButtonBindings} from "@qualcomm-ui/qds-core/menu"
 import type {Booleanish} from "@qualcomm-ui/utils/coercion"

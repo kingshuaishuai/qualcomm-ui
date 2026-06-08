@@ -85,6 +85,7 @@ export type RenderLink = (
   props: HTMLAttributes<HTMLAnchorElement> & {href: string},
 ) => ReactNode
 
+// oxlint-disable-next-line typescript/no-unsafe-function-type
 export function isFunc(thing: unknown): thing is Function {
   return typeof thing === "function"
 }
@@ -164,4 +165,4 @@ export function getList(iterable: any, keys: any) {
 }
 
 export const getExtensions = (defObj: any) =>
-  defObj.filter((v: any, k: any) => /^x-/.test(k))
+  defObj.filter((v: any, k: any) => k.startsWith("x-"))

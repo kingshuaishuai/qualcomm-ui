@@ -10,7 +10,7 @@ import {
 } from "@angular/core"
 
 import {useOnDestroy} from "@qualcomm-ui/angular-core/common"
-import {type Brand, type Theme} from "@qualcomm-ui/angular/theme"
+import type {Brand, Theme} from "@qualcomm-ui/angular/theme"
 
 /**
  * A service that provides access to the current theme and brand, and ensures that

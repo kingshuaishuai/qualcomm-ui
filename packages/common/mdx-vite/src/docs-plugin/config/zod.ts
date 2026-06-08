@@ -1,4 +1,4 @@
-import {z} from "zod"
+import type {z} from "zod"
 
 export type Implements<Model> = {
   [key in keyof Model]-?: undefined extends Model[key]

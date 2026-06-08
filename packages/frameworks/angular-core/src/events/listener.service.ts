@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 
 import {DOCUMENT} from "@angular/common"
-import {ElementRef, inject, Injectable, Renderer2} from "@angular/core"
+import {type ElementRef, inject, Injectable, Renderer2} from "@angular/core"
 
 export type ListenerTrigger = "hover" | "focus" | "click" | "manual"
 
@@ -115,7 +115,7 @@ export class ListenerService {
       unListen()
     })
     this.listeners.forEach((unlisten, key) => {
-      // @ts-ignore
+      // @ts-expect-error
       this.listeners.set(key, null)
     })
     this.listeners.clear()
