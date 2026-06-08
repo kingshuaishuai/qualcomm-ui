@@ -11,7 +11,7 @@ import {
 import {Tag} from "@qualcomm-ui/react/tag"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsSelectContext} from "./qds-select-context"
+import {useQdsSelectContext} from "./qds-select-context.js"
 
 export interface SelectValueTextProps extends ElementRenderProp<"span"> {}
 

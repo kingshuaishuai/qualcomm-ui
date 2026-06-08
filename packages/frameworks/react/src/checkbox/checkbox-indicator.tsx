@@ -11,7 +11,7 @@ import {
 import {CheckmarkIcon} from "@qualcomm-ui/react/checkmark"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsCheckboxContext} from "./qds-checkbox-context"
+import {useQdsCheckboxContext} from "./qds-checkbox-context.js"
 
 export interface CheckboxIndicatorProps extends ElementRenderProp<"div"> {
   /**

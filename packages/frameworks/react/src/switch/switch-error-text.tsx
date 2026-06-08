@@ -14,7 +14,7 @@ import {
 } from "@qualcomm-ui/react/input"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsSwitchContext} from "./qds-switch-context"
+import {useQdsSwitchContext} from "./qds-switch-context.js"
 
 export interface SwitchErrorTextProps extends IdProp, InputErrorTextProps {
   /**

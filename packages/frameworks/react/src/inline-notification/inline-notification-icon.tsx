@@ -19,7 +19,7 @@ import {IconOrNode} from "@qualcomm-ui/react/icon"
 import {ProgressRing} from "@qualcomm-ui/react/progress-ring"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsInlineNotificationContext} from "./qds-inline-notification-context"
+import {useQdsInlineNotificationContext} from "./qds-inline-notification-context.js"
 
 export interface InlineNotificationIconProps extends ElementRenderProp<"span"> {
   /**

@@ -13,7 +13,7 @@ import {useTextAreaErrorText} from "@qualcomm-ui/react-core/text-area"
 import {IconOrNode} from "@qualcomm-ui/react/icon"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsTextAreaContext} from "./qds-text-area-context"
+import {useQdsTextAreaContext} from "./qds-text-area-context.js"
 
 export interface TextAreaErrorTextProps extends ElementRenderProp<"div"> {
   /**

@@ -13,7 +13,7 @@ import {
 } from "@qualcomm-ui/react/inline-icon-button"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsTreeContext} from "./qds-tree-context"
+import {useQdsTreeContext} from "./qds-tree-context.js"
 
 export interface TreeNodeActionProps
   extends

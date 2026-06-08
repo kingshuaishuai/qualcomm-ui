@@ -13,7 +13,7 @@ import {
 import {IconOrNode} from "@qualcomm-ui/react/icon"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {qdsSideNavApi} from "./qds-side-nav-context"
+import {qdsSideNavApi} from "./qds-side-nav-context.js"
 
 export interface SideNavBranchTriggerProps extends CoreTreeBranchTriggerProps {
   /**

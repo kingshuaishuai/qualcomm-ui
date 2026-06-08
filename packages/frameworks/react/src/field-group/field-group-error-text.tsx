@@ -13,7 +13,7 @@ import {
 import {IconOrNode} from "@qualcomm-ui/react/icon"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsFieldGroupContext} from "./qds-field-group-context"
+import {useQdsFieldGroupContext} from "./qds-field-group-context.js"
 
 export interface FieldGroupErrorTextProps extends ElementRenderProp<"div"> {
   /**

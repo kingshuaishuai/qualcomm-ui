@@ -18,7 +18,7 @@ import {
 import {useQdsFieldGroupContext} from "@qualcomm-ui/react/field-group"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {QdsSwitchContextProvider} from "./qds-switch-context"
+import {QdsSwitchContextProvider} from "./qds-switch-context.js"
 
 export interface SwitchRootProps
   extends

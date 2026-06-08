@@ -12,7 +12,7 @@ import {Icon, IconOrNode} from "@qualcomm-ui/react/icon"
 import {useQdsMenuContext} from "@qualcomm-ui/react/menu"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {qdsHeaderBarApi} from "./qds-header-bar-context"
+import {qdsHeaderBarApi} from "./qds-header-bar-context.js"
 
 export interface HeaderBarMenuItemProps extends ElementRenderProp<"button"> {
   /**

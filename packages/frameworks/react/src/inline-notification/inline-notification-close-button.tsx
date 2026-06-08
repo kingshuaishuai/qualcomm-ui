@@ -10,7 +10,7 @@ import type {ElementRenderProp, IdProp} from "@qualcomm-ui/react-core/system"
 import {InlineIconButton} from "@qualcomm-ui/react/inline-icon-button"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsInlineNotificationContext} from "./qds-inline-notification-context"
+import {useQdsInlineNotificationContext} from "./qds-inline-notification-context.js"
 
 export interface InlineNotificationCloseButtonProps
   extends IdProp, ElementRenderProp<"button"> {

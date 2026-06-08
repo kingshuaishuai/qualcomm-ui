@@ -17,7 +17,7 @@ import type {ElementRenderProp} from "@qualcomm-ui/react-core/system"
 import {IconOrNode} from "@qualcomm-ui/react/icon"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useAlertBannerContext} from "./qds-alert-banner-context"
+import {useAlertBannerContext} from "./qds-alert-banner-context.js"
 
 export interface AlertBannerIconProps extends ElementRenderProp<"span"> {
   /**

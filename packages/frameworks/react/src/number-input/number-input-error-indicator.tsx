@@ -10,7 +10,7 @@ import {
 } from "@qualcomm-ui/react/input"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsNumberInputContext} from "./qds-number-input-context"
+import {useQdsNumberInputContext} from "./qds-number-input-context.js"
 
 export interface NumberInputErrorIndicatorProps extends InputErrorIndicatorProps {}
 

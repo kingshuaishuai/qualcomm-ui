@@ -16,8 +16,8 @@ import {
 import {Button, type ButtonProps} from "@qualcomm-ui/react/button"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {MenuIconButton, type MenuIconButtonProps} from "./menu-icon-button"
-import {MenuTrigger} from "./menu-trigger"
+import {MenuIconButton, type MenuIconButtonProps} from "./menu-icon-button.js"
+import {MenuTrigger} from "./menu-trigger.js"
 
 /**
  * @since 1.24.0

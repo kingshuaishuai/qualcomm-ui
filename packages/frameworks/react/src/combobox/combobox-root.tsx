@@ -21,7 +21,7 @@ import {
 import type {CollectionItem} from "@qualcomm-ui/utils/collection"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {QdsComboboxContextProvider} from "./qds-combobox-context"
+import {QdsComboboxContextProvider} from "./qds-combobox-context.js"
 
 export interface ComboboxRootProps<T extends CollectionItem>
   extends CoreComboboxRootProps<T>, QdsSelectApiProps {

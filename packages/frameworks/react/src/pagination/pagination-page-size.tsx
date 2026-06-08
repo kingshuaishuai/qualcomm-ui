@@ -12,7 +12,7 @@ import {
 import {Menu} from "@qualcomm-ui/react/menu"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsPaginationContext} from "./qds-pagination-context"
+import {useQdsPaginationContext} from "./qds-pagination-context.js"
 
 export interface PaginationPageSizeProps extends ElementRenderProp<"div"> {
   /**

@@ -10,7 +10,7 @@ import {
 import {InputStartIcon, useQdsInputContext} from "@qualcomm-ui/react/input"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsComboboxContext} from "./qds-combobox-context"
+import {useQdsComboboxContext} from "./qds-combobox-context.js"
 
 export interface ComboboxControlProps extends CoreComboboxControlProps {}
 

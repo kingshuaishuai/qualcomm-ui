@@ -12,7 +12,7 @@ import {CoreToast} from "@qualcomm-ui/react-core/toast"
 import {Button} from "@qualcomm-ui/react/button"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsToastContext} from "./qds-toast-context"
+import {useQdsToastContext} from "./qds-toast-context.js"
 
 export interface ToastActionButtonProps extends ElementRenderProp<"button"> {
   /**

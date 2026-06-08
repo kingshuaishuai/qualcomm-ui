@@ -12,7 +12,7 @@ import {
 import {InlineIconButton} from "@qualcomm-ui/react/inline-icon-button"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsTabsContext} from "../qds-tabs-context"
+import {useQdsTabsContext} from "../qds-tabs-context.js"
 
 export interface TabDismissButtonProps extends CoreTabsTabDismissButtonProps {}
 

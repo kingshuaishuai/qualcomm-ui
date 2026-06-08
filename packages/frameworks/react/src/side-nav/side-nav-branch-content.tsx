@@ -8,7 +8,7 @@ import {useTreeBranchContent} from "@qualcomm-ui/react-core/tree"
 import {Collapsible} from "@qualcomm-ui/react/collapsible"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {qdsSideNavApi} from "./qds-side-nav-context"
+import {qdsSideNavApi} from "./qds-side-nav-context.js"
 
 export interface SideNavBranchContentProps extends ElementRenderProp<"div"> {
   /**

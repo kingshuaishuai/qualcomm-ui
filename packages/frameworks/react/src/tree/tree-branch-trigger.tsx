@@ -13,7 +13,7 @@ import {
 import {IconOrNode} from "@qualcomm-ui/react/icon"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsTreeContext} from "./qds-tree-context"
+import {useQdsTreeContext} from "./qds-tree-context.js"
 
 export interface TreeBranchTriggerProps extends CoreTreeBranchTriggerProps {
   /**

@@ -25,7 +25,7 @@ import {
 import {useQdsFieldGroupContext} from "@qualcomm-ui/react/field-group"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {QdsCheckboxContextProvider} from "./qds-checkbox-context"
+import {QdsCheckboxContextProvider} from "./qds-checkbox-context.js"
 
 export interface CheckboxRootProps
   extends

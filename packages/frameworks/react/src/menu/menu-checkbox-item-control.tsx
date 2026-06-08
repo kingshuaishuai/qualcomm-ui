@@ -11,7 +11,7 @@ import {
 import {CheckmarkIcon} from "@qualcomm-ui/react/checkmark"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsMenuContext} from "./qds-menu-context"
+import {useQdsMenuContext} from "./qds-menu-context.js"
 
 export interface MenuCheckboxItemControlProps extends ElementRenderProp<"div"> {
   /**

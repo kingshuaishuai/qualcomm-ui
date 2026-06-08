@@ -12,7 +12,7 @@ import type {ButtonProps} from "@qualcomm-ui/react/button"
 import {IconOrNode} from "@qualcomm-ui/react/icon"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {qdsHeaderBarApi} from "./qds-header-bar-context"
+import {qdsHeaderBarApi} from "./qds-header-bar-context.js"
 
 export interface HeaderBarNavItemProps
   extends

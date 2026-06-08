@@ -8,7 +8,7 @@ import {useTreeBranchContent} from "@qualcomm-ui/react-core/tree"
 import {Collapsible} from "@qualcomm-ui/react/collapsible"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsTreeContext} from "./qds-tree-context"
+import {useQdsTreeContext} from "./qds-tree-context.js"
 
 export interface TreeBranchContentProps extends ElementRenderProp<"div"> {
   /**

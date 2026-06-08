@@ -14,7 +14,7 @@ import {
 import {IconOrNode} from "@qualcomm-ui/react/icon"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsPaginationContext} from "./qds-pagination-context"
+import {useQdsPaginationContext} from "./qds-pagination-context.js"
 
 export interface PaginationNextTriggerProps extends ElementRenderProp<"button"> {
   /**

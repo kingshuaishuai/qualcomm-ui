@@ -12,8 +12,8 @@ import {PolymorphicElement} from "@qualcomm-ui/react-core/system"
 import {Icon, IconOrNode} from "@qualcomm-ui/react/icon"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useButtonGroupContext} from "./button-group-context"
-import type {IconButtonProps} from "./icon-button.types"
+import {useButtonGroupContext} from "./button-group-context.js"
+import type {IconButtonProps} from "./icon-button.types.js"
 
 /**
  * A styled icon button. Renders a `<button>` element by default.

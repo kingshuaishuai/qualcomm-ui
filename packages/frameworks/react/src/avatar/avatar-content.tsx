@@ -14,7 +14,7 @@ import {
 import {IconOrNode} from "@qualcomm-ui/react/icon"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsAvatarContext} from "./qds-avatar-context"
+import {useQdsAvatarContext} from "./qds-avatar-context.js"
 
 export interface AvatarContentProps extends IdProp, ElementRenderProp<"span"> {
   /**

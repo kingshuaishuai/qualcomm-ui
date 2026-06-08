@@ -8,7 +8,7 @@ import type {ElementRenderProp} from "@qualcomm-ui/react-core/system"
 import {IconOrNode} from "@qualcomm-ui/react/icon"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsBreadcrumbsContext} from "./qds-breadcrumbs-context"
+import {useQdsBreadcrumbsContext} from "./qds-breadcrumbs-context.js"
 
 export interface BreadcrumbsItemIconProps extends Omit<
   ElementRenderProp<"span">,

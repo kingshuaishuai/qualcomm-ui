@@ -10,7 +10,7 @@ import type {ElementRenderProp} from "@qualcomm-ui/react-core/system"
 import {InlineIconButton} from "@qualcomm-ui/react/inline-icon-button"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsSelectContext} from "./qds-select-context"
+import {useQdsSelectContext} from "./qds-select-context.js"
 
 export interface SelectIndicatorProps extends ElementRenderProp<"button"> {
   /**

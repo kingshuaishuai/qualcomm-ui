@@ -10,7 +10,7 @@ import type {ElementRenderProp} from "@qualcomm-ui/react-core/system"
 import {IconOrNode} from "@qualcomm-ui/react/icon"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsInputContext} from "./qds-input-context"
+import {useQdsInputContext} from "./qds-input-context.js"
 
 export interface InputErrorIndicatorProps extends ElementRenderProp<"span"> {
   /**

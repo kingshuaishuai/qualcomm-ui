@@ -12,7 +12,7 @@ import {
 import {InlineIconButton} from "@qualcomm-ui/react/inline-icon-button"
 import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 
-import {useQdsComboboxContext} from "./qds-combobox-context"
+import {useQdsComboboxContext} from "./qds-combobox-context.js"
 
 export interface ComboboxTriggerProps extends CoreComboboxTriggerProps {
   /**
