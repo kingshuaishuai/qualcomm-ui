@@ -18,7 +18,7 @@ import {createQdsCheckmarkApi} from "@qualcomm-ui/qds-core/checkmark"
 @Component({
   selector: "[q-select-item-checkbox]",
   standalone: false,
-  template: ` <q-checkmark-icon /> `,
+  template: `<q-checkmark-icon />`,
 })
 export class SelectItemCheckboxComponent implements OnInit {
   protected readonly itemContext = useSelectItemContext()

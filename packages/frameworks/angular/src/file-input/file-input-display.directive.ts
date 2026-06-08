@@ -12,7 +12,7 @@ import {mergeProps} from "@qualcomm-ui/utils/merge-props"
 @Component({
   selector: "[q-file-input-display]",
   standalone: false,
-  template: ` {{ fileName() || placeholder() }} `,
+  template: `{{ fileName() || placeholder() }}`,
 })
 export class FileInputDisplayDirective implements OnInit {
   /**

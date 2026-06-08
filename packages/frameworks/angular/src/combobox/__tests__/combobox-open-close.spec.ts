@@ -50,7 +50,7 @@ const testCases: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [ComboboxModule],
-        template: ` <q-combobox label="Label" [collection]="collection" /> `,
+        template: `<q-combobox label="Label" [collection]="collection" />`,
       })
       class SimpleComponent {
         collection = stringCollection
@@ -108,7 +108,7 @@ const testCases: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [ComboboxModule],
-        template: ` <q-combobox label="Label" [collection]="collection" /> `,
+        template: `<q-combobox label="Label" [collection]="collection" />`,
       })
       class SimpleComponent {
         collection = stringCollection
@@ -163,7 +163,7 @@ const testCases: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [ComboboxModule],
-        template: ` <q-combobox label="Label" [collection]="collection" /> `,
+        template: `<q-combobox label="Label" [collection]="collection" />`,
       })
       class SimpleComponent {
         collection = stringCollection
@@ -218,7 +218,7 @@ const testCases: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [ComboboxModule],
-        template: ` <q-combobox label="Label" [collection]="collection" /> `,
+        template: `<q-combobox label="Label" [collection]="collection" />`,
       })
       class SimpleComponent {
         collection = stringCollection

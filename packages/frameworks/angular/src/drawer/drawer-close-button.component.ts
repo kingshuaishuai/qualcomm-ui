@@ -14,6 +14,6 @@ import {DialogCloseButtonComponent} from "@qualcomm-ui/angular/dialog"
   providers: [provideIcons({X})],
   selector: "[q-drawer-close-button]",
   standalone: false,
-  template: ` <svg qIcon="X" [q-bind]="buttonApi().getIconBindings()"></svg> `,
+  template: `<svg qIcon="X" [q-bind]="buttonApi().getIconBindings()"></svg>`,
 })
 export class DrawerCloseButtonComponent extends DialogCloseButtonComponent {}

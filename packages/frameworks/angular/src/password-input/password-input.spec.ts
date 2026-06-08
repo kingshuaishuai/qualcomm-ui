@@ -88,7 +88,7 @@ const testCases: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [PasswordInputModule],
-        template: ` <q-password-input aria-label="Account password" /> `,
+        template: `<q-password-input aria-label="Account password" />`,
       })
       class SimpleComponent {}
       return SimpleComponent

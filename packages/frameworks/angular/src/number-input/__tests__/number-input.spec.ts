@@ -87,7 +87,7 @@ const testCases: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [NumberInputModule],
-        template: ` <q-number-input [aria-label]="inputLabel" /> `,
+        template: `<q-number-input [aria-label]="inputLabel" />`,
       })
       class SimpleComponent {
         protected readonly inputLabel = "Amount"
@@ -1070,7 +1070,7 @@ const testCases: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [NumberInputModule],
-        template: ` <q-number-input defaultValue="42" [label]="demoLabel" /> `,
+        template: `<q-number-input defaultValue="42" [label]="demoLabel" />`,
       })
       class SimpleComponent {
         protected readonly demoLabel = demoLabel
@@ -1316,7 +1316,7 @@ const testCases: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [NumberInputModule],
-        template: ` <q-number-input defaultValue="5" [label]="demoLabel" /> `,
+        template: `<q-number-input defaultValue="5" [label]="demoLabel" />`,
       })
       class SimpleComponent {
         protected readonly demoLabel = demoLabel

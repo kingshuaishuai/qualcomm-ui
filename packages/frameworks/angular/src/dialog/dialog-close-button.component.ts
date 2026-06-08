@@ -18,7 +18,7 @@ import {useQdsDialogContext} from "./qds-dialog-context.service"
   providers: [provideIcons({X})],
   selector: "[q-dialog-close-button]",
   standalone: false,
-  template: ` <svg qIcon="X" [q-bind]="buttonApi().getIconBindings()"></svg> `,
+  template: `<svg qIcon="X" [q-bind]="buttonApi().getIconBindings()"></svg>`,
 })
 export class DialogCloseButtonComponent extends CoreDialogCloseTriggerDirective {
   protected readonly qdsContext = useQdsDialogContext()

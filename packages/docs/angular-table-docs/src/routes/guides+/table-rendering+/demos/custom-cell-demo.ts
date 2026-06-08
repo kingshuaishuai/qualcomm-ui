@@ -39,7 +39,7 @@ export class StatusCell extends CellComponentContextDirective<User, string> {
 // Custom cell component for formatting session duration
 @Component({
   selector: "app-duration-cell",
-  template: `{{ formattedDuration() }}`,
+  template:`{{ formattedDuration() }}`,
 })
 export class DurationCell extends CellComponentContextDirective<User, number> {
   formattedDuration() {

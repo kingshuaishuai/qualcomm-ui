@@ -12,7 +12,7 @@ import {useQdsTreeContext} from "./qds-tree-context.service"
 @Component({
   selector: "[q-tree-branch-trigger]",
   standalone: false,
-  template: ` <svg [qIcon]="icon()"></svg> `,
+  template: `<svg [qIcon]="icon()"></svg>`,
 })
 export class TreeBranchTriggerDirective extends CoreTreeBranchTriggerDirective {
   /**

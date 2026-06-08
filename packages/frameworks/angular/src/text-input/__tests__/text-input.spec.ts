@@ -84,7 +84,7 @@ const testCases: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [TextInputModule],
-        template: ` <q-text-input aria-label="Search query" /> `,
+        template: `<q-text-input aria-label="Search query" />`,
       })
       class SimpleComponent {}
       return SimpleComponent

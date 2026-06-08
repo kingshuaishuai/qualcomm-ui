@@ -42,7 +42,7 @@ const tests: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [ProgressModule],
-        template: ` <div q-progress [label]="testLabel()"></div> `,
+        template: `<div q-progress [label]="testLabel()"></div>`,
       })
       class SimpleComponent {
         protected readonly testLabel = signal(testLabel)
@@ -81,7 +81,7 @@ const tests: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [ProgressModule],
-        template: ` <div q-progress [label]="testLabel()" [value]="50"></div> `,
+        template: `<div q-progress [label]="testLabel()" [value]="50"></div>`,
       })
       class SimpleComponent {
         protected readonly testLabel = signal(testLabel)
@@ -169,7 +169,7 @@ const tests: MultiComponentTest[] = [
     simple() {
       @Component({
         imports: [ProgressModule],
-        template: ` <div q-progress [label]="testLabel()"></div> `,
+        template: `<div q-progress [label]="testLabel()"></div>`,
       })
       class SimpleComponent {
         protected readonly testLabel = signal(testLabel)

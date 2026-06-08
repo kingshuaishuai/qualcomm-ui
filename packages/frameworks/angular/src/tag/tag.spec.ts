@@ -12,7 +12,7 @@ describe("Tag", () => {
   test("renders its content as the tag label", async () => {
     @Component({
       imports: [TagDirective],
-      template: ` <span q-tag>Label</span> `,
+      template: `<span q-tag>Label</span>`,
     })
     class TagComponent {}
 
@@ -24,7 +24,7 @@ describe("Tag", () => {
   test("does not render any icon when startIcon and endIcon are omitted", async () => {
     @Component({
       imports: [TagDirective],
-      template: ` <span q-tag>Label</span> `,
+      template: `<span q-tag>Label</span>`,
     })
     class TagWithoutIconsComponent {}
 
@@ -44,7 +44,7 @@ describe("Tag", () => {
     @Component({
       imports: [TagDirective],
       providers: [provideIcons({Plus})],
-      template: ` <span q-tag startIcon="Plus">Label</span> `,
+      template: `<span q-tag startIcon="Plus">Label</span>`,
     })
     class StartIconTagComponent {}
 
@@ -59,7 +59,7 @@ describe("Tag", () => {
     @Component({
       imports: [TagDirective],
       providers: [provideIcons({Star})],
-      template: ` <span endIcon="Star" q-tag>Label</span> `,
+      template: `<span endIcon="Star" q-tag>Label</span>`,
     })
     class EndIconTagComponent {}
 
@@ -122,7 +122,7 @@ describe("Tag", () => {
   test("exposes a selectable tag as a button with an accessible name", async () => {
     @Component({
       imports: [TagDirective],
-      template: ` <button q-tag variant="selectable">Label</button> `,
+      template: `<button q-tag variant="selectable">Label</button>`,
     })
     class SelectableTagComponent {}
 
@@ -136,7 +136,7 @@ describe("Tag", () => {
   test("does not expose a default tag as a button", async () => {
     @Component({
       imports: [TagDirective],
-      template: ` <span q-tag>Label</span> `,
+      template: `<span q-tag>Label</span>`,
     })
     class DefaultTagComponent {}
 
@@ -206,7 +206,7 @@ describe("Tag", () => {
   test("exposes the selectable tag's pressed state to assistive tech and toggles it when uncontrolled", async () => {
     @Component({
       imports: [TagDirective],
-      template: ` <button q-tag variant="selectable">Label</button> `,
+      template: `<button q-tag variant="selectable">Label</button>`,
     })
     class UncontrolledSelectableTagComponent {}
 

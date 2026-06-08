@@ -98,7 +98,7 @@ describe("Button", () => {
     @Component({
       imports: [ButtonModule],
       providers: [provideIcons({Plus})],
-      template: ` <button q-button startIcon="Plus">Add Item</button> `,
+      template: `<button q-button startIcon="Plus">Add Item</button>`,
     })
     class StartIconButtonComponent {}
 
@@ -113,7 +113,7 @@ describe("Button", () => {
     @Component({
       imports: [ButtonModule],
       providers: [provideIcons({Plus})],
-      template: ` <button endIcon="Plus" q-button>Add Item</button> `,
+      template: `<button endIcon="Plus" q-button>Add Item</button>`,
     })
     class EndIconButtonComponent {}
 
@@ -127,7 +127,7 @@ describe("Button", () => {
   test("exposes the aria-label as the accessible name", async () => {
     @Component({
       imports: [ButtonModule],
-      template: ` <button aria-label="Save document" q-button>Save</button> `,
+      template: `<button aria-label="Save document" q-button>Save</button>`,
     })
     class AriaLabelButtonComponent {}
 

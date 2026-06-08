@@ -62,7 +62,7 @@ describe("CheckmarkIcon", () => {
   test("can expose an aria-label through the host element", async () => {
     @Component({
       imports: [CheckmarkIconComponent],
-      template: ` <q-checkmark-icon aria-label="Checked" role="img" /> `,
+      template: `<q-checkmark-icon aria-label="Checked" role="img" />`,
     })
     class AriaLabelCheckmarkIconComponent {}
 

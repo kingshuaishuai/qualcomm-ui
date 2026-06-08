@@ -25,7 +25,7 @@ import {useInlineIconButtonApi} from "./use-inline-icon-button-api"
   hostDirectives: [QuiPreloadDirective],
   imports: [IconDirective, QBindDirective],
   selector: "[q-inline-icon-button]",
-  template: ` <svg [q-bind]="api().getIconBindings()" [qIcon]="icon()"></svg> `,
+  template: `<svg [q-bind]="api().getIconBindings()" [qIcon]="icon()"></svg>`,
 })
 export class InlineIconButtonComponent
   implements SignalifyInput<QdsInlineIconButtonApiProps>, OnInit

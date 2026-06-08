@@ -14,7 +14,7 @@ import {highlightWord} from "@qualcomm-ui/utils/highlight-word"
       @if (chunk.match) {
         <mark>{{ chunk.text }}</mark>
       } @else {
-        {{ chunk.text }}
+        <ng-container>{{ chunk.text }}</ng-container>
       }
     }
   `,

@@ -26,7 +26,7 @@ import type {Booleanish} from "@qualcomm-ui/utils/coercion"
 
 @Component({
   selector: "[q-badge]",
-  template: ` <span><ng-content /></span> `,
+  template: `<span><ng-content /></span>`,
 })
 export class BadgeDirective
   implements OnInit, SignalifyInput<QdsTextBadgeProps>

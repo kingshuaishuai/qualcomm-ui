@@ -14,7 +14,7 @@ import {accordionClasses} from "@qualcomm-ui/qds-core/accordion"
   },
   selector: "q-accordion-item-indicator",
   standalone: false,
-  template: ` <svg [qIcon]="icon()"></svg> `,
+  template: `<svg [qIcon]="icon()"></svg>`,
 })
 export class AccordionItemIndicatorComponent extends CoreAccordionItemTriggerIndicatorDirective {
   protected readonly accordionClasses = accordionClasses
