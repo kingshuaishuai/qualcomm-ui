@@ -7,10 +7,6 @@ import {SearchIndexer} from "../search-indexer"
 
 import {readJsonSync, writeJsonSync} from "./utils"
 
-vi.mock("node:child_process", () => ({
-  execSync: () => "",
-}))
-
 const __filename = fileURLToPath(import.meta.url) // get the resolved path to the file
 const __dirname = dirname(__filename) // get the name of the directory
 

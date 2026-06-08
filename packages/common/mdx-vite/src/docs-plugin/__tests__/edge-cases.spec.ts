@@ -10,10 +10,6 @@ import {readJsonSync, writeJsonSync} from "./utils"
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-vi.mock("node:child_process", () => ({
-  execSync: () => "",
-}))
-
 const filePaths = {
   navItems: resolve(
     __dirname,

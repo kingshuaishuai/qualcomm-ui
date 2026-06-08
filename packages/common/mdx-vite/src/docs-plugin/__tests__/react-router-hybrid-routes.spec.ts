@@ -3,10 +3,6 @@ import {dirname, resolve} from "node:path"
 import {fileURLToPath} from "node:url"
 import {describe, expect, test, vi} from "vitest"
 
-vi.mock("node:child_process", () => ({
-  execSync: () => "",
-}))
-
 import {SearchIndexer} from "../search-indexer"
 
 import {readJsonSync, writeJsonSync} from "./utils"
