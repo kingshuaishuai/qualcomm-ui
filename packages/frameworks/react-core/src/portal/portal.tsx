@@ -12,7 +12,7 @@ import {createPortal} from "react-dom"
 
 import {useSafeLayoutEffect} from "@qualcomm-ui/react-core/effects"
 
-import {usePortalContext} from "./portal-context"
+import {usePortalContext} from "./portal-context.js"
 
 export interface PortalProps {
   /**
