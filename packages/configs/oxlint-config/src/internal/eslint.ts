@@ -23,7 +23,7 @@ const correctness: DummyRuleMap = {
   "eslint/no-dupe-keys": "error",
   "eslint/no-duplicate-case": "error",
   "eslint/no-empty-character-class": "error",
-  // "eslint/no-empty-pattern": "off",
+  "eslint/no-empty-pattern": "error",
   // "eslint/no-empty-static-block": "off",
   // "eslint/no-eval": "off",
   // "eslint/no-ex-assign": "off",

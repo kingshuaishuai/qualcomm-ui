@@ -1,12 +1,7 @@
 // Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 
-import {
-  defineConfig,
-  type DummyRuleMap,
-  type OxlintConfig,
-  type OxlintOverride,
-} from "oxlint"
+import type {DummyRuleMap, OxlintConfig} from "oxlint"
 
 export const reactPlugins: NonNullable<OxlintConfig["plugins"]> = [
   "react",
