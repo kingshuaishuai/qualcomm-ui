@@ -41,7 +41,14 @@ export type QdsTagShape = "square" | "rounded"
 
 export type QdsTagSize = "sm" | "md" | "lg"
 
-export type QdsTagVariant = "link" | "selectable" | "dismissable"
+/** @deprecated use `render` */
+// eslint-disable-next-line @typescript-eslint/naming-convention
+export type QdsTagVariant__deprecated = "link"
+
+export type QdsTagVariant =
+  | "selectable"
+  | "dismissable"
+  | QdsTagVariant__deprecated
 
 export interface QdsTagApiProps {
   /**

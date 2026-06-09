@@ -79,7 +79,7 @@ import {QdsTagContextService} from "./qds-tag-context.service"
       },
     },
   ],
-  selector: "span[q-tag], button[q-tag], div[q-tag]",
+  selector: "span[q-tag], button[q-tag], a[q-tag], div[q-tag]",
   template: `
     <ng-content select="[q-start-icon]">
       @if (startIcon()) {
