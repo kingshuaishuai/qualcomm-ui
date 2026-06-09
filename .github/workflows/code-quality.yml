@@ -26,7 +26,7 @@ jobs:
     - uses: ./.github/actions/init-node-and-install
 
     - name: lint
-      run: oxlint --quiet
+      run: pnpm lint:ci
 
   build:
     runs-on: ubuntu-latest
