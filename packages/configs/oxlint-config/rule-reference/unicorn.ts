@@ -4,178 +4,178 @@
 import type {DummyRuleMap} from "oxlint"
 
 const correctness: DummyRuleMap = {
-  // TODO: decide whether to enable. default=error; fixable=💡; version=v0.2.18
-  "unicorn/no-await-in-promise-methods": "off",
-  // TODO: decide whether to enable. default=error; fixable=none; version=v0.0.15
+  // default=error; category=correctness; fixable=💡; version=v0.2.18
+  "unicorn/no-await-in-promise-methods": "error",
+  // default=error; category=correctness; fixable=none; version=v0.0.15
   "unicorn/no-empty-file": "off",
-  // TODO: decide whether to enable. default=error; fixable=none; version=v0.15.12
-  "unicorn/no-invalid-fetch-options": "off",
-  // TODO: decide whether to enable. default=error; fixable=none; version=v0.0.16
-  "unicorn/no-invalid-remove-event-listener": "off",
-  // TODO: decide whether to enable. default=error; fixable=⚠️ 💡; version=v0.0.16
+  // default=error; category=correctness; fixable=none; version=v0.15.12
+  "unicorn/no-invalid-fetch-options": "error",
+  // default=error; category=correctness; fixable=none; version=v0.0.16
+  "unicorn/no-invalid-remove-event-listener": "error",
+  // default=error; category=correctness; fixable=⚠️ 💡; version=v0.0.16
   "unicorn/no-new-array": "off",
-  // TODO: decide whether to enable. default=error; fixable=🛠️; version=v0.2.18
+  // default=error; category=correctness; fixable=🛠️; version=v0.2.18
   "unicorn/no-single-promise-in-promise-methods": "off",
-  // TODO: decide whether to enable. default=error; fixable=none; version=v0.0.13
+  // default=error; category=correctness; fixable=none; version=v0.0.13
   "unicorn/no-thenable": "off",
-  // TODO: decide whether to enable. default=error; fixable=🛠️; version=v0.0.12
-  "unicorn/no-unnecessary-await": "off",
-  // TODO: decide whether to enable. default=error; fixable=🛠️; version=v0.0.16
+  // default=error; category=correctness; fixable=🛠️; version=v0.0.12
+  "unicorn/no-unnecessary-await": "error",
+  // default=error; category=correctness; fixable=🛠️; version=v0.0.16
   "unicorn/no-useless-fallback-in-spread": "off",
-  // TODO: decide whether to enable. default=error; fixable=🚧; version=v0.0.19
-  "unicorn/no-useless-length-check": "off",
-  // TODO: decide whether to enable. default=error; fixable=⚠️ 🛠️; version=v0.0.19
+  // default=error; category=correctness; fixable=🚧; version=v0.0.19
+  "unicorn/no-useless-length-check": "error",
+  // default=error; category=correctness; fixable=⚠️ 🛠️; version=v0.0.19
   "unicorn/no-useless-spread": "off",
-  // TODO: decide whether to enable. default=error; fixable=🛠️; version=v0.0.19
-  "unicorn/prefer-set-size": "off",
-  // TODO: decide whether to enable. default=error; fixable=🛠️; version=v0.0.18
+  // default=error; category=correctness; fixable=🛠️; version=v0.0.19
+  "unicorn/prefer-set-size": "error",
+  // default=error; category=correctness; fixable=🛠️; version=v0.0.18
   "unicorn/prefer-string-starts-ends-with": "off",
 }
 
 const nursery: DummyRuleMap = {
-  // TODO: decide whether to enable. default=off; fixable=🛠️ 💡; version=v1.59.0
+  // default=off; category=nursery; fixable=🛠️ 💡; version=v1.59.0
   "unicorn/no-useless-iterator-to-array": "off",
 }
 
 const pedantic: DummyRuleMap = {
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.16.9
+  // default=off; category=pedantic; fixable=🛠️; version=v0.16.9
   "unicorn/consistent-assert": "off",
-  // TODO: decide whether to enable. default=off; fixable=💡; version=v0.10.1
+  // default=off; category=pedantic; fixable=💡; version=v0.10.1
   "unicorn/consistent-empty-array-spread": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.19
+  // default=off; category=pedantic; fixable=🛠️; version=v0.0.19
   "unicorn/escape-case": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.19
+  // default=off; category=pedantic; fixable=🛠️; version=v0.0.19
   "unicorn/explicit-length-check": "off",
-  // TODO: decide whether to enable. default=off; fixable=🚧; version=v0.0.16
+  // default=off; category=pedantic; fixable=🚧; version=v0.0.16
   "unicorn/new-for-builtins": "off",
-  // TODO: decide whether to enable. default=off; fixable=🚧; version=v1.19.0
+  // default=off; category=pedantic; fixable=🚧; version=v1.19.0
   "unicorn/no-array-callback-reference": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.18
+  // default=off; category=pedantic; fixable=🛠️; version=v0.0.18
   "unicorn/no-hex-escape": "off",
-  // TODO: decide whether to enable. default=off; fixable=🚧; version=v1.35.0
+  // default=off; category=pedantic; fixable=🚧; version=v1.35.0
   "unicorn/no-immediate-mutation": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.8
+  // default=off; category=pedantic; fixable=🛠️; version=v0.0.8
   "unicorn/no-instanceof-array": "off",
-  // TODO: decide whether to enable. default=off; fixable=🚧; version=v0.0.18
+  // default=off; category=pedantic; fixable=🚧; version=v0.0.18
   "unicorn/no-lonely-if": "off",
-  // TODO: decide whether to enable. default=off; fixable=🚧; version=v0.0.18
+  // default=off; category=pedantic; fixable=🚧; version=v0.0.18
   "unicorn/no-negated-condition": "off",
-  // TODO: decide whether to enable. default=off; fixable=💡; version=v0.5.3
+  // default=off; category=pedantic; fixable=💡; version=v0.5.3
   "unicorn/no-negation-in-equality-check": "off",
-  // TODO: decide whether to enable. default=off; fixable=💡; version=v0.0.16
+  // default=off; category=pedantic; fixable=💡; version=v0.0.16
   "unicorn/no-new-buffer": "off",
-  // TODO: decide whether to enable. default=off; fixable=none; version=v0.0.16
+  // default=off; category=pedantic; fixable=none; version=v0.0.16
   "unicorn/no-object-as-default-parameter": "off",
-  // TODO: decide whether to enable. default=off; fixable=⚠️ 🛠️; version=v0.0.16
-  "unicorn/no-static-only-class": "off",
-  // TODO: decide whether to enable. default=off; fixable=none; version=v0.0.18
+  // default=off; category=pedantic; fixable=⚠️ 🛠️; version=v0.0.16
+  "unicorn/no-static-only-class": "error",
+  // default=off; category=pedantic; fixable=none; version=v0.0.18
   "unicorn/no-this-assignment": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️ 💡; version=v0.0.18
+  // default=off; category=pedantic; fixable=🛠️ 💡; version=v0.0.18
   "unicorn/no-typeof-undefined": "off",
-  // TODO: decide whether to enable. default=off; fixable=💡; version=v0.16.12
+  // default=off; category=pedantic; fixable=💡; version=v0.16.12
   "unicorn/no-unnecessary-array-flat-depth": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v1.20.0
+  // default=off; category=pedantic; fixable=🛠️; version=v1.20.0
   "unicorn/no-unnecessary-array-splice-count": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.16.10
+  // default=off; category=pedantic; fixable=🛠️; version=v0.16.10
   "unicorn/no-unnecessary-slice-end": "off",
-  // TODO: decide whether to enable. default=off; fixable=none; version=v0.0.19
-  "unicorn/no-unreadable-iife": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.18
+  // default=off; category=pedantic; fixable=none; version=v0.0.19
+  "unicorn/no-unreadable-iife": "error",
+  // default=off; category=pedantic; fixable=🛠️; version=v0.0.18
   "unicorn/no-useless-promise-resolve-reject": "off",
-  // TODO: decide whether to enable. default=off; fixable=🚧; version=v0.0.18
+  // default=off; category=pedantic; fixable=🚧; version=v0.0.18
   "unicorn/no-useless-switch-case": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.6.1
+  // default=off; category=pedantic; fixable=🛠️; version=v0.6.1
   "unicorn/no-useless-undefined": "off",
-  // TODO: decide whether to enable. default=off; fixable=⚠️ 🛠️; version=v0.0.20
+  // default=off; category=pedantic; fixable=⚠️ 🛠️; version=v0.0.20
   "unicorn/prefer-array-flat": "off",
-  // TODO: decide whether to enable. default=off; fixable=💡; version=v0.0.18
+  // default=off; category=pedantic; fixable=💡; version=v0.0.18
   "unicorn/prefer-array-some": "off",
-  // TODO: decide whether to enable. default=off; fixable=⚠️ 🛠️; version=v1.20.0
-  "unicorn/prefer-at": "off",
-  // TODO: decide whether to enable. default=off; fixable=🚧; version=v0.0.16
+  // default=off; category=pedantic; fixable=⚠️ 🛠️; version=v1.20.0
+  "unicorn/prefer-at": "warn",
+  // default=off; category=pedantic; fixable=🚧; version=v0.0.16
   "unicorn/prefer-blob-reading-methods": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.16
+  // default=off; category=pedantic; fixable=🛠️; version=v0.0.16
   "unicorn/prefer-code-point": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.16
-  "unicorn/prefer-date-now": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.18
+  // default=off; category=pedantic; fixable=🛠️; version=v0.0.16
+  "unicorn/prefer-date-now": "warn",
+  // default=off; category=pedantic; fixable=🛠️; version=v0.0.18
   "unicorn/prefer-dom-node-append": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.18
+  // default=off; category=pedantic; fixable=🛠️; version=v0.0.18
   "unicorn/prefer-dom-node-dataset": "off",
-  // TODO: decide whether to enable. default=off; fixable=🚧; version=v0.0.18
+  // default=off; category=pedantic; fixable=🚧; version=v0.0.18
   "unicorn/prefer-dom-node-remove": "off",
-  // TODO: decide whether to enable. default=off; fixable=none; version=v0.0.18
+  // default=off; category=pedantic; fixable=none; version=v0.0.18
   "unicorn/prefer-event-target": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v1.59.0
+  // default=off; category=pedantic; fixable=🛠️; version=v1.59.0
   "unicorn/prefer-import-meta-properties": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.10.1
+  // default=off; category=pedantic; fixable=🛠️; version=v0.10.1
   "unicorn/prefer-math-min-max": "off",
-  // TODO: decide whether to enable. default=off; fixable=💡; version=v0.0.18
+  // default=off; category=pedantic; fixable=💡; version=v0.0.18
   "unicorn/prefer-math-trunc": "off",
-  // TODO: decide whether to enable. default=off; fixable=🚧; version=v0.0.19
+  // default=off; category=pedantic; fixable=🚧; version=v0.0.19
   "unicorn/prefer-native-coercion-functions": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.21
+  // default=off; category=pedantic; fixable=🛠️; version=v0.0.21
   "unicorn/prefer-prototype-methods": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.15
+  // default=off; category=pedantic; fixable=🛠️; version=v0.0.15
   "unicorn/prefer-query-selector": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.16
+  // default=off; category=pedantic; fixable=🛠️; version=v0.0.16
   "unicorn/prefer-regexp-test": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.18
+  // default=off; category=pedantic; fixable=🛠️; version=v0.0.18
   "unicorn/prefer-string-replace-all": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.18
+  // default=off; category=pedantic; fixable=🛠️; version=v0.0.18
   "unicorn/prefer-string-slice": "off",
-  // TODO: decide whether to enable. default=off; fixable=🚧; version=v1.20.0
+  // default=off; category=pedantic; fixable=🚧; version=v1.20.0
   "unicorn/prefer-top-level-await": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.16
+  // default=off; category=pedantic; fixable=🛠️; version=v0.0.16
   "unicorn/prefer-type-error": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.15
+  // default=off; category=pedantic; fixable=🛠️; version=v0.0.15
   "unicorn/require-number-to-fixed-digits-argument": "off",
 }
 
 const perf: DummyRuleMap = {
-  // TODO: decide whether to enable. default=off; fixable=🚧; version=v0.16.12
-  "unicorn/prefer-array-find": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.14
+  // default=off; category=perf; fixable=🚧; version=v0.16.12
+  "unicorn/prefer-array-find": "error",
+  // default=off; category=perf; fixable=🛠️; version=v0.0.14
   "unicorn/prefer-array-flat-map": "off",
-  // TODO: decide whether to enable. default=off; fixable=⚠️ 🛠️; version=v0.13.2
+  // default=off; category=perf; fixable=⚠️ 🛠️; version=v0.13.2
   "unicorn/prefer-set-has": "off",
 }
 
 const restriction: DummyRuleMap = {
-  // TODO: decide whether to enable. default=off; fixable=none; version=v1.67.0
+  // default=off; category=restriction; fixable=none; version=v1.67.0
   "unicorn/import-style": "off",
-  // TODO: decide whether to enable. default=off; fixable=none; version=v0.0.18
+  // default=off; category=restriction; fixable=none; version=v0.0.18
   "unicorn/no-abusive-eslint-disable": "off",
-  // TODO: decide whether to enable. default=off; fixable=🚧; version=v0.3.3
+  // default=off; category=restriction; fixable=🚧; version=v0.3.3
   "unicorn/no-anonymous-default-export": "off",
-  // TODO: decide whether to enable. default=off; fixable=🚧; version=v0.0.19
-  "unicorn/no-array-for-each": "off",
-  // TODO: decide whether to enable. default=off; fixable=none; version=v0.0.19
+  // default=off; category=restriction; fixable=🚧; version=v0.0.19
+  "unicorn/no-array-for-each": "error",
+  // default=off; category=restriction; fixable=none; version=v0.0.19
   "unicorn/no-array-reduce": "off",
-  // TODO: decide whether to enable. default=off; fixable=none; version=v0.0.18
+  // default=off; category=restriction; fixable=none; version=v0.0.18
   "unicorn/no-document-cookie": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.7.0
+  // default=off; category=restriction; fixable=🛠️; version=v0.7.0
   "unicorn/no-length-as-slice-end": "off",
-  // TODO: decide whether to enable. default=off; fixable=none; version=v0.4.2
+  // default=off; category=restriction; fixable=none; version=v0.4.2
   "unicorn/no-magic-array-flat-depth": "off",
-  // TODO: decide whether to enable. default=off; fixable=🚧; version=v0.2.9
+  // default=off; category=restriction; fixable=🚧; version=v0.2.9
   "unicorn/no-process-exit": "off",
-  // TODO: decide whether to enable. default=off; fixable=💡; version=v1.20.0
+  // default=off; category=restriction; fixable=💡; version=v1.20.0
   "unicorn/no-useless-error-capture-stack-trace": "off",
-  // TODO: decide whether to enable. default=off; fixable=🚧; version=v0.1.1
+  // default=off; category=restriction; fixable=🚧; version=v0.1.1
   "unicorn/prefer-modern-math-apis": "off",
-  // TODO: decide whether to enable. default=off; fixable=🚧; version=v1.50.0
+  // default=off; category=restriction; fixable=🚧; version=v1.50.0
   "unicorn/prefer-module": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.19
-  "unicorn/prefer-node-protocol": "off",
-  // TODO: decide whether to enable. default=off; fixable=⚠️ 🛠️; version=v0.0.19
+  // default=off; category=restriction; fixable=🛠️; version=v0.0.19
+  "unicorn/prefer-node-protocol": "error",
+  // default=off; category=restriction; fixable=⚠️ 🛠️; version=v0.0.19
   "unicorn/prefer-number-properties": "off",
 }
 
 const style: DummyRuleMap = {
   // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.14
   "unicorn/catch-error-name": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.15.13
+  // default=off; category=style; fixable=🛠️; version=v0.15.13
   "unicorn/consistent-date-clone": "off",
   // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.12.0
   "unicorn/consistent-existence-index-check": "off",

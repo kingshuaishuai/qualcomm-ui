@@ -13,9 +13,11 @@ import {eslintRules} from "./internal/eslint.js"
 import {importRules} from "./internal/import.js"
 import {oxcRules} from "./internal/oxc.js"
 import {promiseRules} from "./internal/promise.js"
+import {unicornRules} from "./internal/unicorn.js"
 
 export const corePlugins: NonNullable<OxlintConfig["plugins"]> = [
   "import",
+  "unicorn",
   "promise",
 ]
 
@@ -59,6 +61,7 @@ export const styleGuideRules: DummyRuleMap = {
   ...promiseRules,
   ...importRules,
   ...eslintRules,
+  ...unicornRules,
   ...oxcRules,
   ...jsImportRules,
 }
