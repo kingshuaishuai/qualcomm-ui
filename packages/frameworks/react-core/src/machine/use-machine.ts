@@ -246,7 +246,11 @@ export function useMachine<T extends MachineSchema>(
         cleanups.push(cleanup)
       }
     }
-    return () => cleanups.forEach((fn) => fn?.())
+    return () => {
+      for (const fn of cleanups) {
+        fn?.()
+      }
+    }
   }
 
   const action = (keys: ActionsOrFn<T> | undefined) => {
@@ -384,7 +388,9 @@ export function useMachine<T extends MachineSchema>(
       debug("unmounting...")
       hydratedStateRef.current = currentState
       statusRef.current = MachineStatus.STOPPED
-      fns.forEach((fn) => fn?.())
+      for (const fn of fns.values()) {
+        fn?.()
+      }
       effects.current = new Map()
       transitionRef.current = null
       queueMicrotask(() => {

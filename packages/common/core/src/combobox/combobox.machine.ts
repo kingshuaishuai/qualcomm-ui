@@ -187,7 +187,9 @@ const comboboxMachineBase = {
       cleanups.push(observerCleanup)
 
       return () => {
-        cleanups.forEach((cleanup) => cleanup())
+        for (const cleanup of cleanups) {
+          cleanup()
+        }
       }
     },
     trackDismissableLayer({prop, scope, send}) {

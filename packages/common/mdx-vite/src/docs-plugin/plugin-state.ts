@@ -211,9 +211,9 @@ export class PluginState {
         this.createIndexer(resolvedConfig)
         this.handleChange({
           onComplete: () => {
-            this.servers.forEach((server) =>
-              server.ws.send({type: "full-reload"}),
-            )
+            for (const server of this.servers) {
+              server.ws.send({type: "full-reload"})
+            }
           },
         })
       })

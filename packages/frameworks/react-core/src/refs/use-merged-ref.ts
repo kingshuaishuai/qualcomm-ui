@@ -29,9 +29,9 @@ export function assignRef<T = any>(
 
 export function mergeRefs<T>(...refs: (ReactRef<T> | null | undefined)[]) {
   return (node: T | null): void => {
-    refs.forEach((ref) => {
+    for (const ref of refs) {
       assignRef(ref, node)
-    })
+    }
   }
 }
 
@@ -53,9 +53,9 @@ export function useMergedRef<Instance>(
     }
 
     return (instance) => {
-      refs.forEach((ref) => {
+      for (const ref of refs) {
         setRef(ref, instance)
-      })
+      }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, refs)
