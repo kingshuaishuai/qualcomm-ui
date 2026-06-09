@@ -390,4 +390,34 @@ describe("Tag", () => {
 
     expect(dismissed).not.toHaveBeenCalled()
   })
+
+  test("exposes an anchor tag as a link with an accessible name", async () => {
+    @Component({
+      imports: [TagDirective],
+      template: `
+        <a href="/blog/ai" q-tag>Label</a>
+      `,
+    })
+    class AnchorTagComponent {}
+
+    await render(AnchorTagComponent)
+
+    await expect.element(page.getByRole("link", {name: "Label"})).toBeVisible()
+  })
+
+  test("does not expose an anchor tag as a button", async () => {
+    @Component({
+      imports: [TagDirective],
+      template: `
+        <a href="/blog/ai" q-tag>Label</a>
+      `,
+    })
+    class AnchorTagNotButtonComponent {}
+
+    await render(AnchorTagNotButtonComponent)
+
+    await expect
+      .element(page.getByRole("button", {name: "Label"}))
+      .not.toBeInTheDocument()
+  })
 })

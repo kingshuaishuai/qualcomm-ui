@@ -250,4 +250,27 @@ describe("Tag", () => {
 
     expect(onDismiss).not.toHaveBeenCalled()
   })
+
+  test("exposes a tag rendered as an anchor as a link with an accessible name", async () => {
+    await render(<Tag render={<a href="/blog/ai" />}>Label</Tag>)
+
+    await expect.element(page.getByRole("link", {name: "Label"})).toBeVisible()
+  })
+
+  test("does not expose an anchor tag as a button", async () => {
+    await render(<Tag render={<a href="/blog/ai" />}>Label</Tag>)
+
+    await expect.element(page.getByRole("link", {name: "Label"})).toBeVisible()
+    await expect
+      .element(page.getByRole("button", {name: "Label"}))
+      .not.toBeInTheDocument()
+  })
+
+  test("does not expose pressed state on an anchor tag", async () => {
+    await render(<Tag render={<a href="/blog/ai" />}>Label</Tag>)
+
+    await expect
+      .element(page.getByRole("link", {name: "Label"}))
+      .not.toHaveAttribute("aria-pressed")
+  })
 })
