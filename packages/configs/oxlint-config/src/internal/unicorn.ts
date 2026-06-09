@@ -98,7 +98,7 @@ const restriction: DummyRuleMap = {
 }
 
 const style: DummyRuleMap = {
-  // "unicorn/catch-error-name": "off",
+  "unicorn/catch-error-name": "off",
   "unicorn/consistent-date-clone": "off",
   // "unicorn/consistent-existence-index-check": "off",
   // "unicorn/consistent-template-literal-escape": "off",

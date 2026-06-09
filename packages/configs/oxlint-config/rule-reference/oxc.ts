@@ -33,41 +33,41 @@ const correctness: DummyRuleMap = {
 }
 
 const pedantic: DummyRuleMap = {
-  // TODO: decide whether to enable. default=off; fixable=💡; version=v1.22.0
+  // default=off; category=pedantic; fixable=💡; version=v1.22.0
   "oxc/branches-sharing-code": "off",
 }
 
 const perf: DummyRuleMap = {
-  // TODO: decide whether to enable. default=off; fixable=none; version=v0.0.19
+  // default=off; category=perf; fixable=none; version=v0.0.19
   "oxc/no-accumulating-spread": "off",
-  // TODO: decide whether to enable. default=off; fixable=💡; version=v0.11.0
+  // default=off; category=perf; fixable=💡; version=v0.11.0
   "oxc/no-map-spread": "off",
 }
 
 const restriction: DummyRuleMap = {
-  // TODO: decide whether to enable. default=off; fixable=💡; version=v0.0.3
+  // default=off; category=restriction; fixable=💡; version=v0.0.3
   "oxc/bad-bitwise-operator": "off",
-  // TODO: decide whether to enable. default=off; fixable=none; version=v0.4.2
+  // default=off; category=restriction; fixable=none; version=v0.4.2
   "oxc/no-async-await": "off",
-  // TODO: decide whether to enable. default=off; fixable=none; version=v0.3.0
+  // default=off; category=restriction; fixable=none; version=v0.3.0
   "oxc/no-barrel-file": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.4.2
+  // default=off; category=restriction; fixable=🛠️; version=v0.4.2
   "oxc/no-const-enum": "off",
-  // TODO: decide whether to enable. default=off; fixable=none; version=v0.5.0
+  // default=off; category=restriction; fixable=none; version=v0.5.0
   "oxc/no-optional-chaining": "off",
-  // TODO: decide whether to enable. default=off; fixable=none; version=v0.4.2
+  // default=off; category=restriction; fixable=none; version=v0.4.2
   "oxc/no-rest-spread-properties": "off",
 }
 
 const suspicious: DummyRuleMap = {
-  // TODO: decide whether to enable. default=off; fixable=💡; version=v0.1.1
+  // default=off; category=suspicious; fixable=💡; version=v0.1.1
   "oxc/approx-constant": "off",
-  // TODO: decide whether to enable. default=off; fixable=💡; version=v0.1.1
+  // default=off; category=suspicious; fixable=💡; version=v0.1.1
   "oxc/misrefactored-assign-op": "off",
-  // TODO: decide whether to enable. default=off; fixable=none; version=v0.9.2
+  // default=off; category=suspicious; fixable=none; version=v0.9.2
   "oxc/no-async-endpoint-handlers": "off",
-  // TODO: decide whether to enable. default=off; fixable=none; version=v1.33.0
-  "oxc/no-this-in-exported-function": "off",
+  // default=off; category=suspicious; fixable=none; version=v1.33.0
+  "oxc/no-this-in-exported-function": "error",
 }
 
 export const oxcRules: DummyRuleMap = {

@@ -149,7 +149,7 @@ const restriction: DummyRuleMap = {
   // default=off; category=restriction; fixable=🚧; version=v0.3.3
   "unicorn/no-anonymous-default-export": "off",
   // default=off; category=restriction; fixable=🚧; version=v0.0.19
-  "unicorn/no-array-for-each": "error",
+  "unicorn/no-array-for-each": "warn",
   // default=off; category=restriction; fixable=none; version=v0.0.19
   "unicorn/no-array-reduce": "off",
   // default=off; category=restriction; fixable=none; version=v0.0.18
@@ -173,7 +173,7 @@ const restriction: DummyRuleMap = {
 }
 
 const style: DummyRuleMap = {
-  // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.0.14
+  // default=off; category=style; fixable=🛠️; version=v0.0.14
   "unicorn/catch-error-name": "off",
   // default=off; category=style; fixable=🛠️; version=v0.15.13
   "unicorn/consistent-date-clone": "off",

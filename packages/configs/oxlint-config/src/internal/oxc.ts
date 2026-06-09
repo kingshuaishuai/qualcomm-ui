@@ -20,28 +20,28 @@ const correctness: DummyRuleMap = {
 }
 
 const pedantic: DummyRuleMap = {
-  // "oxc/branches-sharing-code": "off",
+  "oxc/branches-sharing-code": "off",
 }
 
 const perf: DummyRuleMap = {
-  // "oxc/no-accumulating-spread": "off",
-  // "oxc/no-map-spread": "off",
+  "oxc/no-accumulating-spread": "off",
+  "oxc/no-map-spread": "off",
 }
 
 const restriction: DummyRuleMap = {
-  // "oxc/bad-bitwise-operator": "off",
-  // "oxc/no-async-await": "off",
-  // "oxc/no-barrel-file": "off",
-  // "oxc/no-const-enum": "off",
-  // "oxc/no-optional-chaining": "off",
-  // "oxc/no-rest-spread-properties": "off",
+  "oxc/bad-bitwise-operator": "off",
+  "oxc/no-async-await": "off",
+  "oxc/no-barrel-file": "off",
+  "oxc/no-const-enum": "off",
+  "oxc/no-optional-chaining": "off",
+  "oxc/no-rest-spread-properties": "off",
 }
 
 const suspicious: DummyRuleMap = {
-  // "oxc/approx-constant": "off",
-  // "oxc/misrefactored-assign-op": "off",
-  // "oxc/no-async-endpoint-handlers": "off",
-  // "oxc/no-this-in-exported-function": "off",
+  "oxc/approx-constant": "off",
+  "oxc/misrefactored-assign-op": "off",
+  "oxc/no-async-endpoint-handlers": "off",
+  "oxc/no-this-in-exported-function": "off",
 }
 
 export const oxcRules: DummyRuleMap = {
