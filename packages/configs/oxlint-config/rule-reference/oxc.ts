@@ -67,7 +67,7 @@ const suspicious: DummyRuleMap = {
   // default=off; category=suspicious; fixable=none; version=v0.9.2
   "oxc/no-async-endpoint-handlers": "off",
   // default=off; category=suspicious; fixable=none; version=v1.33.0
-  "oxc/no-this-in-exported-function": "error",
+  "oxc/no-this-in-exported-function": "off",
 }
 
 export const oxcRules: DummyRuleMap = {

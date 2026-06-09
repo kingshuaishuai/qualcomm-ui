@@ -139,7 +139,7 @@ const suspicious: DummyRuleMap = {
   // default=off; category=suspicious; fixable=none; version=v0.15.13
   "react/no-namespace": "error",
   // default=off; category=suspicious; fixable=none; version=v1.66.0
-  "react/no-unstable-nested-components": "warn",
+  "react/no-unstable-nested-components": "off",
   // default=off; category=suspicious; fixable=none; version=v0.0.20
   "react/react-in-jsx-scope": "off",
   // default=off; category=suspicious; fixable=none; version=v0.11.0

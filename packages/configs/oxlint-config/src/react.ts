@@ -3,6 +3,8 @@
 
 import type {DummyRuleMap, OxlintConfig} from "oxlint"
 
+import {jsxA11yRules} from "./internal/jsx-a11y.js"
+
 export const reactPlugins: NonNullable<OxlintConfig["plugins"]> = [
   "react",
   "jsx-a11y",
@@ -65,7 +67,8 @@ const suspicious: DummyRuleMap = {
   "react/jsx-no-comment-textnodes": "error",
   "react/jsx-no-script-url": "error",
   "react/no-namespace": "error",
-  "react/no-unstable-nested-components": "warn",
+  // TODO: enable if this ever can exclude components in useMemo.
+  "react/no-unstable-nested-components": "off",
   "react/react-in-jsx-scope": "off", // no longer required in React 17+
   "react/style-prop-object": "error",
 }
@@ -116,4 +119,5 @@ export const reactRules: DummyRuleMap = {
   ...suspicious,
   ...perf,
   ...nursery,
+  ...jsxA11yRules,
 }

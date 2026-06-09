@@ -158,7 +158,7 @@ export function MdxProvider({children, components}: Props): ReactNode {
           ),
           HeadingSteps,
           hr: (props) => <hr className="mdx" {...props} />,
-          img: (props) => <img className="mdx" {...props} />,
+          img: (props) => <img alt="Image" className="mdx" {...props} />,
           li: (props) => <li className="mdx" {...props} />,
           ol: (props) => <ol className="mdx" {...props} />,
           p: ({className, ...props}) => (
