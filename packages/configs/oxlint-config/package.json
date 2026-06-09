@@ -43,6 +43,7 @@
     "@qualcomm-ui/utils": "workspace:*",
     "@qualcomm-ui/vite": "catalog:",
     "cross-env": "^10.1.0",
+    "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-perfectionist": "^5.9.0",
     "npm-run-all2": "catalog:",
     "oxlint": "catalog:",

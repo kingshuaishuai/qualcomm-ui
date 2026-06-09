@@ -23,6 +23,7 @@ export const oxfmtPlugin: ExternalPluginEntry = "oxlint-plugin-oxfmt"
 
 export const coreJsPlugins: ExternalPluginEntry[] = [
   oxfmtPlugin,
+  {name: "js-import", specifier: "eslint-plugin-import"},
   "eslint-plugin-perfectionist",
 ]
 
@@ -48,9 +49,16 @@ export const sortRules: DummyRuleMap = {
   ],
 }
 
+// TODO: remove when this rule has an autofix available:
+//  https://oxc.rs/docs/guide/usage/linter/rules/import/no-duplicates.html
+const jsImportRules: DummyRuleMap = {
+  "js-import/no-duplicates": ["error", {"prefer-inline": true}],
+}
+
 export const styleGuideRules: DummyRuleMap = {
   ...promiseRules,
   ...importRules,
   ...eslintRules,
   ...oxcRules,
+  ...jsImportRules,
 }

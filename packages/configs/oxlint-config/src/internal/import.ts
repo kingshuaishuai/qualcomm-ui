@@ -45,7 +45,8 @@ const style: DummyRuleMap = {
   "import/group-exports": "off",
   "import/newline-after-import": "error",
   "import/no-anonymous-default-export": "off",
-  // TODO: re-enable when autofix is available
+  // TODO: re-enable when autofix is available:
+  //  https://oxc.rs/docs/guide/usage/linter/rules/import/no-duplicates.html
   "import/no-duplicates": ["off", {preferInline: true}],
   "import/no-mutable-exports": "error",
   "import/no-named-default": "off",
