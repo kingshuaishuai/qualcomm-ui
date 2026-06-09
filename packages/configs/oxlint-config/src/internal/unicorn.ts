@@ -84,7 +84,7 @@ const restriction: DummyRuleMap = {
   "unicorn/import-style": "off",
   "unicorn/no-abusive-eslint-disable": "off",
   "unicorn/no-anonymous-default-export": "off",
-  "unicorn/no-array-for-each": "error",
+  "unicorn/no-array-for-each": "warn",
   "unicorn/no-array-reduce": "off",
   "unicorn/no-document-cookie": "off",
   "unicorn/no-length-as-slice-end": "off",
