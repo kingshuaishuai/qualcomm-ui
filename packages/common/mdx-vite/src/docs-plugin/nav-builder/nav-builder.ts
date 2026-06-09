@@ -267,8 +267,7 @@ export class NavBuilder {
   ) {
     const segment = pathSegments[0]
     const parentItem = items.find(
-      (parent) =>
-        parent.pathSegments.at(-1) === segment,
+      (parent) => parent.pathSegments.at(-1) === segment,
     )
     if (parentItem) {
       this.nestedInsert(item, pathSegments.slice(1), parentItem.items ?? [])
