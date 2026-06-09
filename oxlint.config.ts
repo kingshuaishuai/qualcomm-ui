@@ -1,4 +1,4 @@
-import {defineConfig} from "oxlint"
+import {defineConfig, type OxlintConfig} from "oxlint"
 
 import {
   coreJsPlugins,
@@ -74,4 +74,4 @@ export default defineConfig({
       },
     },
   ],
-})
+}) as OxlintConfig
