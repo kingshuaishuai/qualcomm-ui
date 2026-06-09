@@ -159,7 +159,8 @@ export class NavBuilder {
       })
     }
 
-    pathSegments.forEach((segment, index) => {
+    for (const segment of pathSegments) {
+      const index = pathSegments.indexOf(segment)
       const depth = index + 1
 
       // we only add an item if it doesn't already exist, which we determine by
@@ -203,7 +204,7 @@ export class NavBuilder {
           ),
         })
       }
-    })
+    }
   }
 
   /**
@@ -293,12 +294,12 @@ export class NavBuilder {
 
   private sortNestedNavItems(items: NavItem[], groupOrder?: string[]) {
     items.sort((a, b) => this.navItemSort(a, b, groupOrder))
-    items.forEach((item) => {
+    for (const item of items) {
       if (item.items?.length) {
         const meta = getRouteMeta(item.pathSegments, this.metaJson)
         this.sortNestedNavItems(item.items, meta?.groupOrder)
       }
-    })
+    }
   }
 
   /**
@@ -319,7 +320,7 @@ export class NavBuilder {
     this.sortNestedNavItems(this.navItems, rootMeta?.groupOrder)
 
     if (this.navMeta) {
-      Object.entries(this.navMeta).forEach(([index, value]) => {
+      for (const [index, value] of Object.entries(this.navMeta)) {
         this._navItems.splice(parseInt(index), 0, {
           depth: 1,
           id: uuidv4(),
@@ -328,7 +329,7 @@ export class NavBuilder {
           separator: value.separator,
           title: "",
         })
-      })
+      }
     }
 
     this._navItems = this.groupNavItems(this.navItems)

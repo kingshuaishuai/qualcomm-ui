@@ -52,14 +52,14 @@ export function ComboboxHookFormDemo(): ReactElement {
     const validation = valueSchema(data)
 
     if (validation instanceof type.errors) {
-      validation.forEach((error) => {
+      for (const error of validation) {
         const field = error.path?.[0] as keyof ValueSchema
         if (field) {
           setError(field, {
             message: error.message,
           })
         }
-      })
+      }
       return
     }
 

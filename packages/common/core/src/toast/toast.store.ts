@@ -57,7 +57,9 @@ export function createToastStore<V = string>(
   }
 
   const publish = (data: Partial<ToastApiProps<V>>) => {
-    subscribers.forEach((subscriber) => subscriber(data))
+    for (const subscriber of subscribers) {
+      subscriber(data)
+    }
     return data
   }
 
@@ -116,15 +118,17 @@ export function createToastStore<V = string>(
     dismissedToasts.add(id!)
 
     if (!id) {
-      toasts.forEach((toast) => {
-        subscribers.forEach((subscriber) =>
-          subscriber({dismiss: true, id: toast.id}),
-        )
-      })
+      for (const toast of toasts) {
+        for (const subscriber of subscribers) {
+          subscriber({dismiss: true, id: toast.id})
+        }
+      }
       toasts = []
       toastQueue = []
     } else {
-      subscribers.forEach((subscriber) => subscriber({dismiss: true, id}))
+      for (const subscriber of subscribers) {
+        subscriber({dismiss: true, id})
+      }
       toasts = toasts.filter((toast) => toast.id !== id)
       processQueue()
     }

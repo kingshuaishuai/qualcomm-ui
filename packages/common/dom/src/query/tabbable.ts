@@ -43,12 +43,13 @@ export function getFocusables(
 
   const focusableElements = elements.filter(isFocusable)
 
-  focusableElements.forEach((element, i) => {
+  for (const element of focusableElements) {
+    const i = focusableElements.indexOf(element)
     if (isFrame(element) && element.contentDocument) {
       const frameBody = element.contentDocument.body
       focusableElements.splice(i, 1, ...getFocusables(frameBody))
     }
-  })
+  }
 
   return focusableElements
 }
@@ -86,13 +87,14 @@ export function getTabbables(
     tabbableElements.unshift(container)
   }
 
-  tabbableElements.forEach((element, i) => {
+  for (const element of tabbableElements) {
+    const i = tabbableElements.indexOf(element)
     if (isFrame(element) && element.contentDocument) {
       const frameBody = element.contentDocument.body
       const allFrameTabbable = getTabbables(frameBody)
       tabbableElements.splice(i, 1, ...allFrameTabbable)
     }
-  })
+  }
 
   if (!tabbableElements.length && includeContainer) {
     return elements

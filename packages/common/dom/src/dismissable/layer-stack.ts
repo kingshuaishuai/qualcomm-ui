@@ -139,7 +139,9 @@ export const layerStack = {
     // dismiss nested layers
     if (index < this.count() - 1) {
       const _layers = this.getNestedLayers(node)
-      _layers.forEach((layer) => layerStack.dismiss(layer.node, node))
+      for (const layer of _layers) {
+        layerStack.dismiss(layer.node, node)
+      }
     }
 
     // remove this layer
@@ -153,7 +155,8 @@ export const layerStack = {
     }
   },
   syncLayers(): void {
-    this.layers.forEach((layer, index) => {
+    for (const layer of this.layers) {
+      const index = this.layers.indexOf(layer)
       layer.node.style.setProperty("--layer-index", `${index}`)
 
       // Remove previous data attributes
@@ -174,7 +177,7 @@ export const layerStack = {
 
       // Set the nested layer count
       layer.node.style.setProperty("--nested-layer-count", `${nestedCount}`)
-    })
+    }
   },
   topMostPointerBlockingLayer(): Layer | undefined {
     return [...this.pointerBlockingLayers()].slice(-1)[0]

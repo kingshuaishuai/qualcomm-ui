@@ -106,9 +106,9 @@ export function useSizes<T extends HTMLElement | null>({
     }
 
     return () => {
-      cleanups.forEach((cleanup) => {
+      for (const cleanup of cleanups) {
         cleanup?.()
-      })
+      }
     }
     // oxlint-disable-next-line react-hooks/exhaustive-deps
   }, [count])
