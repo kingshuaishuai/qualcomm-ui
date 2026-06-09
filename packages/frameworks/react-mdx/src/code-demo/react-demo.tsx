@@ -130,7 +130,7 @@ export function ReactDemo({
     if (demo.sourceCode.every((item) => item.fileName !== activeTab)) {
       setActiveTab(demo.sourceCode[0]?.fileName)
     }
-  }, [demo.sourceCode])
+  }, [demo.sourceCode, activeTab])
 
   useSafeLayoutEffect(() => {
     if (demo?.fileName && !activeTab) {

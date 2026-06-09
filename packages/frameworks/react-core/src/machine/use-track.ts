@@ -15,8 +15,8 @@ export function useTrack(deps: any[], effect: VoidFunction) {
         return effect()
       }
       called.current = true
-      // eslint-disable-next-line react-hooks/exhaustive-deps
     },
+    // oxlint-disable-next-line react-hooks/exhaustive-deps
     (deps ?? []).map((d) => (typeof d === "function" ? d() : d)),
   )
 

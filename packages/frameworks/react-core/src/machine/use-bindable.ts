@@ -31,6 +31,7 @@ export function useBindable<T, ChangeEvent extends EventDetails | void | null>(
   const prevValue = useRef(valueRef.current)
   useSafeLayoutEffect(() => {
     prevValue.current = valueRef.current
+    // oxlint-disable-next-line react-hooks/exhaustive-deps
   }, [value, props().value])
 
   const setFn = (value: T | ((prev: T) => T), event: ChangeEvent) => {

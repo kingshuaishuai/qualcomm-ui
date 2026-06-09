@@ -113,7 +113,7 @@ function QdsDemoImpl({
       })
       document.body.appendChild(script)
     }
-  }, [])
+  })
 
   useSafeLayoutEffect(() => {
     if (

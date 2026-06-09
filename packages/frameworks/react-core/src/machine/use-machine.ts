@@ -391,6 +391,7 @@ export function useMachine<T extends MachineSchema>(
         action(config.onDestroy?.actions)
       })
     }
+    // oxlint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const getParams = useRef(

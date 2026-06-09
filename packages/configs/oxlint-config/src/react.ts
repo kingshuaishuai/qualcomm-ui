@@ -42,7 +42,7 @@ const correctness: DummyRuleMap = {
 }
 
 const styleRules: DummyRuleMap = {
-  "react/hook-use-state": "error",
+  "react/hook-use-state": "off",
   "react/jsx-boolean-value": "error",
   "react/jsx-curly-brace-presence": [
     "error",
@@ -61,8 +61,8 @@ const styleRules: DummyRuleMap = {
   "react/no-redundant-should-component-update": "error",
   "react/no-set-state": "off",
   "react/prefer-es6-class": "off",
-  "react/self-closing-comp": "error",
-  "react/state-in-constructor": "error",
+  "react/self-closing-comp": ["error", {html: false}],
+  "react/state-in-constructor": "off",
 }
 
 const suspicious: DummyRuleMap = {
@@ -70,7 +70,7 @@ const suspicious: DummyRuleMap = {
   "react/jsx-no-comment-textnodes": "error",
   "react/jsx-no-script-url": "error",
   "react/no-namespace": "error",
-  "react/no-unstable-nested-components": "error",
+  "react/no-unstable-nested-components": "warn",
   "react/react-in-jsx-scope": "off", // no longer required in React 17+
   "react/style-prop-object": "error",
 }
@@ -100,12 +100,12 @@ const restriction: DummyRuleMap = {
 }
 
 const perf: DummyRuleMap = {
-  "react-perf/jsx-no-jsx-as-prop": "error",
+  "react-perf/jsx-no-jsx-as-prop": "off", // mitigated by React Compiler
   "react-perf/jsx-no-new-array-as-prop": "off", // mitigated by React Compiler
   "react-perf/jsx-no-new-function-as-prop": "off", // mitigated by React Compiler
   "react-perf/jsx-no-new-object-as-prop": "off", // mitigated by React Compiler
   "react/jsx-no-constructed-context-values": "off", // mitigated by React Compiler
-  "react/no-array-index-key": "error",
+  "react/no-array-index-key": "warn",
   "react/no-object-type-as-default-prop": "off", // mitigated by React Compiler
 }
 

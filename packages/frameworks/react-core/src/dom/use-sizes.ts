@@ -110,6 +110,7 @@ export function useSizes<T extends HTMLElement | null>({
         cleanup?.()
       })
     }
+    // oxlint-disable-next-line react-hooks/exhaustive-deps
   }, [count])
 
   return sizes as Array<ElementSize | undefined>

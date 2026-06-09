@@ -8,6 +8,7 @@ import {
   styleGuideRules,
 } from "@qualcomm-ui/oxlint-config/core"
 import {nodePlugins, nodeRules} from "@qualcomm-ui/oxlint-config/node"
+import {reactPlugins, reactRules} from "@qualcomm-ui/oxlint-config/react"
 import {
   typescriptPlugins,
   typescriptRules,
@@ -46,6 +47,30 @@ export default defineConfig({
         ...nodeRules,
         ...typescriptRules,
         ...oxfmtRules,
+      },
+    },
+    {
+      excludeFiles: ["packages/frameworks/react-swagger/**/*.tsx"],
+      files: [
+        "{packages,scripts}/**/*.tsx",
+        "*.tsx",
+        "packages/frameworks/react*/**/*.ts",
+        "packages/docs/{react,qui}*/**/*.ts",
+      ],
+      jsPlugins: [...coreJsPlugins],
+      plugins: uniq([
+        ...corePlugins,
+        ...typescriptPlugins,
+        ...nodePlugins,
+        ...reactPlugins,
+      ]),
+      rules: {
+        ...sortRules,
+        ...styleGuideRules,
+        ...nodeRules,
+        ...typescriptRules,
+        ...oxfmtRules,
+        ...reactRules,
       },
     },
   ],

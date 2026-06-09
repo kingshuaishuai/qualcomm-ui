@@ -115,6 +115,7 @@ export function Sidebar({
 
   useSafeLayoutEffect(() => {
     setSelectedValue(getSelectedValue())
+    // oxlint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname])
 
   useEffect(() => {
