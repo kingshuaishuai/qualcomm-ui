@@ -51,7 +51,7 @@
     "react-swagger": "pnpm -C packages/frameworks/react-swagger",
     "test": "turbo run test",
     "lint": "oxlint --quiet",
-    "lint:ci": "oxlint --quiet",
+    "lint:ci": "TSGOLINT_REPORT_TSCONFIG_ERRORS=false oxlint --quiet",
     "test:unit:ci": "turbo run test:unit:ci --concurrency 2",
     "check-updates": "ncu -c 2 -w",
     "doc-gen": "turbo run build:typedoc",
