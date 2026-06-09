@@ -158,9 +158,7 @@ export class NavBuilder {
         ),
       })
     }
-
-    for (const segment of pathSegments) {
-      const index = pathSegments.indexOf(segment)
+    pathSegments.forEach((segment, index) => {
       const depth = index + 1
 
       // we only add an item if it doesn't already exist, which we determine by
@@ -204,7 +202,7 @@ export class NavBuilder {
           ),
         })
       }
-    }
+    })
   }
 
   /**
@@ -270,7 +268,7 @@ export class NavBuilder {
     const segment = pathSegments[0]
     const parentItem = items.find(
       (parent) =>
-        parent.pathSegments[parent.pathSegments.length - 1] === segment,
+        parent.pathSegments.at(-1) === segment,
     )
     if (parentItem) {
       this.nestedInsert(item, pathSegments.slice(1), parentItem.items ?? [])
