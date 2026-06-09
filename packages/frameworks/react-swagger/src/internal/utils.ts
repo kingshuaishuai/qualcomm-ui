@@ -66,7 +66,7 @@ export function stringify(thing: any) {
   if (typeof thing === "object" && thing !== null) {
     try {
       return JSON.stringify(thing, null, 2)
-    } catch (e) {
+    } catch {
       return String(thing)
     }
   }

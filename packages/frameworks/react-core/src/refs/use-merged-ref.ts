@@ -22,7 +22,7 @@ export function assignRef<T = any>(
 
   try {
     ref.current = value
-  } catch (error) {
+  } catch {
     throw new Error("Cannot assign value to ref", {cause: value})
   }
 }

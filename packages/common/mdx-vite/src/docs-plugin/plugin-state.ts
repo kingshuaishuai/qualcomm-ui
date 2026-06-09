@@ -107,7 +107,7 @@ export class PluginState {
     }
     try {
       return JSON.parse(readFileSync(this.docPropsFilePath, "utf-8"))?.props
-    } catch (e) {
+    } catch {
       console.debug(
         "Invalid doc props file. Unable to parse JSON. Please check the file",
       )
@@ -172,7 +172,7 @@ export class PluginState {
       )
       if (virtualModule) {
         server.moduleGraph.invalidateModule(virtualModule)
-        server.reloadModule(virtualModule)
+        void server.reloadModule(virtualModule)
       }
     }
   }

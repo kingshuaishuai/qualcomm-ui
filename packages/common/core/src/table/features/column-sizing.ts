@@ -537,7 +537,7 @@ export function passiveEventSupported(): boolean {
 
     safeWindow?.addEventListener("test", noop, options)
     safeWindow?.removeEventListener("test", noop)
-  } catch (err) {
+  } catch {
     supported = false
   }
   passiveSupported = supported

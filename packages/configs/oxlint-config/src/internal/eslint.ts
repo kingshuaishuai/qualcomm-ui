@@ -15,7 +15,7 @@ const correctness: DummyRuleMap = {
   "eslint/no-const-assign": "error",
   "eslint/no-constant-binary-expression": "error",
   "eslint/no-constant-condition": "error",
-  "eslint/no-control-regex": "error",
+  "eslint/no-control-regex": "off",
   "eslint/no-debugger": "error",
   "eslint/no-delete-var": "warn",
   "eslint/no-dupe-class-members": "error",

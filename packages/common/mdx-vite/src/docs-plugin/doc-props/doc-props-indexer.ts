@@ -142,7 +142,7 @@ export class DocPropsIndexer {
                   })),
                 )
               }
-            } catch (e) {}
+            } catch {}
           }
         }
       })

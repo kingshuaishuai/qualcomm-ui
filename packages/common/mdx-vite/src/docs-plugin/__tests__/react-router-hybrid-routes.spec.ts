@@ -1,7 +1,7 @@
 import {sync} from "glob"
 import {dirname, resolve} from "node:path"
 import {fileURLToPath} from "node:url"
-import {describe, expect, test, vi} from "vitest"
+import {describe, expect, test} from "vitest"
 
 import {SearchIndexer} from "../search-indexer"
 

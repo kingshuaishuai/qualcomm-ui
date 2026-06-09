@@ -1,6 +1,6 @@
 import {defineConfig} from "vite"
 
-import {dependenciesToExternal, libraryEntriesPlugin} from "@qualcomm-ui/vite"
+import {dependenciesToExternal} from "@qualcomm-ui/vite"
 
 export default defineConfig({
   build: {

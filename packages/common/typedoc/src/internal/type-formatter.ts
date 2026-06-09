@@ -144,7 +144,7 @@ export async function prettyImportStatement(str: string): Promise<string> {
       await format("file.tsx", str, formatConfig)
     ).code.trim()
     return prettierCache[str]
-  } catch (e) {
+  } catch {
     return str
   }
 }
