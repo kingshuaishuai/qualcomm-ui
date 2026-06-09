@@ -184,7 +184,7 @@ const style: DummyRuleMap = {
   "typescript/consistent-type-imports": "error",
   // TODO: decide whether to enable. default=off; fixable=none; version=v1.49.0
   "typescript/dot-notation": "off",
-  // TODO: decide whether to enable. default=off; fixable=🚧; version=vnext
+  // TODO: decide whether to enable. default=off; fixable=🚧; version=v1.68.0
   "typescript/method-signature-style": "off",
   // default=off; category=style; fixable=🚧; version=v0.0.6
   "typescript/no-empty-interface": "off",

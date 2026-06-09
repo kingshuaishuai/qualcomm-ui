@@ -335,7 +335,7 @@ const style: DummyRuleMap = {
   "eslint/prefer-destructuring": "off",
   // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.4.0
   "eslint/prefer-exponentiation-operator": "off",
-  // TODO: decide whether to enable. default=off; fixable=none; version=vnext
+  // TODO: decide whether to enable. default=off; fixable=none; version=v1.68.0
   "eslint/prefer-named-capture-group": "off",
   // TODO: decide whether to enable. default=off; fixable=🛠️; version=v0.7.0
   "eslint/prefer-numeric-literals": "off",

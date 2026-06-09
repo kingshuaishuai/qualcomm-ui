@@ -18,7 +18,7 @@ const correctness: DummyRuleMap = {
   "oxc/bad-replace-all-arg": "error",
   // default=error; category=correctness; fixable=none; version=v0.0.22
   "oxc/const-comparisons": "error",
-  // default=error; category=correctness; fixable=🛠️; version=v0.0.22
+  // default=error; category=correctness; fixable=💡; version=v0.0.22
   "oxc/double-comparisons": "error",
   // default=error; category=correctness; fixable=⚠️ 🛠️; version=v0.1.1
   "oxc/erasing-op": "error",
@@ -40,7 +40,7 @@ const pedantic: DummyRuleMap = {
 const perf: DummyRuleMap = {
   // TODO: decide whether to enable. default=off; fixable=none; version=v0.0.19
   "oxc/no-accumulating-spread": "off",
-  // TODO: decide whether to enable. default=off; fixable=🛠️ 💡; version=v0.11.0
+  // TODO: decide whether to enable. default=off; fixable=💡; version=v0.11.0
   "oxc/no-map-spread": "off",
 }
 

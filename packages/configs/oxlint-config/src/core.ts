@@ -9,6 +9,7 @@
 
 import type {DummyRuleMap, ExternalPluginEntry, OxlintConfig} from "oxlint"
 
+import {eslintRules} from "./internal/eslint.js"
 import {importRules} from "./internal/import.js"
 import {oxcRules} from "./internal/oxc.js"
 import {promiseRules} from "./internal/promise.js"
@@ -50,5 +51,6 @@ export const sortRules: DummyRuleMap = {
 export const styleGuideRules: DummyRuleMap = {
   ...promiseRules,
   ...importRules,
+  ...eslintRules,
   ...oxcRules,
 }

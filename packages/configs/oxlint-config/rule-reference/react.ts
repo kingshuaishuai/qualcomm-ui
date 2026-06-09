@@ -68,7 +68,7 @@ const perf: DummyRuleMap = {
   // default=off; category=perf; fixable=none; version=v1.48.0
   "react/jsx-no-constructed-context-values": "off",
   // default=off; category=perf; fixable=none; version=v0.13.0
-  "react/no-array-index-key": "error",
+  "react/no-array-index-key": "warn",
   // default=off; category=perf; fixable=none; version=v1.66.0
   "react/no-object-type-as-default-prop": "off",
 }
@@ -102,7 +102,7 @@ const restriction: DummyRuleMap = {
 
 const style: DummyRuleMap = {
   // default=off; category=style; fixable=🚧; version=v1.59.0
-  "react/hook-use-state": "error",
+  "react/hook-use-state": "off",
   // default=off; category=style; fixable=🛠️; version=v0.7.0
   "react/jsx-boolean-value": "error",
   // default=off; category=style; fixable=🛠️; version=v0.7.0
@@ -126,7 +126,7 @@ const style: DummyRuleMap = {
   // default=off; category=style; fixable=🛠️; version=v0.9.3
   "react/self-closing-comp": "error",
   // default=off; category=style; fixable=none; version=v1.26.0
-  "react/state-in-constructor": "error",
+  "react/state-in-constructor": "off",
 }
 
 const suspicious: DummyRuleMap = {
@@ -139,7 +139,7 @@ const suspicious: DummyRuleMap = {
   // default=off; category=suspicious; fixable=none; version=v0.15.13
   "react/no-namespace": "error",
   // default=off; category=suspicious; fixable=none; version=v1.66.0
-  "react/no-unstable-nested-components": "error",
+  "react/no-unstable-nested-components": "warn",
   // default=off; category=suspicious; fixable=none; version=v0.0.20
   "react/react-in-jsx-scope": "off",
   // default=off; category=suspicious; fixable=none; version=v0.11.0

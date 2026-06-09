@@ -57,7 +57,7 @@ const style: DummyRuleMap = {
   // default=off; category=style; fixable=none; version=v0.15.14
   "import/no-anonymous-default-export": "off",
   // default=off; category=style; fixable=none; version=v0.2.11
-  "import/no-duplicates": "error",
+  "import/no-duplicates": "off",
   // default=off; category=style; fixable=none; version=v0.15.13
   "import/no-mutable-exports": "error",
   // default=off; category=style; fixable=none; version=v0.15.3

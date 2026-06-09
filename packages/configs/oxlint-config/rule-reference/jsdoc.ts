@@ -55,7 +55,7 @@ const restriction: DummyRuleMap = {
 const style: DummyRuleMap = {
   // TODO: decide whether to enable. default=off; fixable=none; version=v1.65.0
   "jsdoc/require-throws-description": "off",
-  // TODO: decide whether to enable. default=off; fixable=none; version=vnext
+  // TODO: decide whether to enable. default=off; fixable=none; version=v1.68.0
   "jsdoc/require-yields-description": "off",
 }
 

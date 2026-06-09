@@ -5,7 +5,7 @@ import type {DummyRuleMap} from "oxlint"
 
 const perf: DummyRuleMap = {
   // default=off; category=perf; fixable=none; version=v0.2.3
-  "react-perf/jsx-no-jsx-as-prop": "error",
+  "react-perf/jsx-no-jsx-as-prop": "off",
   // default=off; category=perf; fixable=none; version=v0.2.3
   "react-perf/jsx-no-new-array-as-prop": "off",
   // default=off; category=perf; fixable=none; version=v0.2.3

@@ -45,7 +45,8 @@ const style: DummyRuleMap = {
   "import/group-exports": "off",
   "import/newline-after-import": "error",
   "import/no-anonymous-default-export": "off",
-  "import/no-duplicates": ["error", {preferInline: true}],
+  // TODO: re-enable when autofix is available
+  "import/no-duplicates": ["off", {preferInline: true}],
   "import/no-mutable-exports": "error",
   "import/no-named-default": "off",
   "import/no-named-export": "off",
