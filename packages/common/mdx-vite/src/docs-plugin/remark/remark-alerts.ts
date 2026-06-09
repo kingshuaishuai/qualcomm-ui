@@ -56,7 +56,7 @@ export const remarkAlerts: Plugin<[], Root> = () => {
 
       title = title.replace(/^\//, "")
 
-      if (!!alertType) {
+      if (alertType) {
         node.data = {
           hName: "div",
           hProperties: {

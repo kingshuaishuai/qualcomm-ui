@@ -14,8 +14,7 @@ export function isPlainObject(value: any): boolean {
     return true
   }
 
-  const Ctor =
-    Object.hasOwnProperty.call(proto, "constructor") && proto.constructor
+  const Ctor = Object.hasOwn(proto, "constructor") && proto.constructor
   if (Ctor === Object) {
     return true
   }
@@ -458,5 +457,5 @@ export async function copyString(value: string) {
   }
 
   // fallback to copy-to-clipboard when navigator.clipboard is not available
-  copyToClipboard(value)
+  void copyToClipboard(value)
 }

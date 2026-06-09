@@ -80,11 +80,9 @@ function createVirtualizerBase<
     }
   })
 
-  let cleanup: () => void | undefined
   afterNextRender({read: () => (virtualizer ?? lazyInit())._didMount()})
 
-  // @ts-expect-error use before assign
-  inject(DestroyRef).onDestroy(() => cleanup?.())
+  inject(DestroyRef).onDestroy(() => {})
 
   return proxyVirtualizer(virtualizerSignal, lazyInit)
 }

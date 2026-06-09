@@ -5,7 +5,7 @@ import type {ReactElement, ReactNode} from "react"
 
 import {
   createQdsIconBadgeApi,
-  type QdsIconBadgeProps as QdsIconBadgeProps,
+  type QdsIconBadgeProps,
 } from "@qualcomm-ui/qds-core/badge"
 import type {LucideIconOrElement} from "@qualcomm-ui/react-core/lucide"
 import {normalizeProps} from "@qualcomm-ui/react-core/machine"
