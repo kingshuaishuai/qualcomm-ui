@@ -38,12 +38,12 @@ export const remarkAlerts: Plugin<[], Root> = () => {
 
             if (!text.includes("\n")) {
               const itemChild: PhrasingContent[] = []
-              for (const item1 of item.children) {
-                const idx: number = item.children.indexOf(item1)
-                if (idx === 0) {
+              for (let i = 0; i < item.children.length; i++) {
+                const item1 = item.children[i]
+                if (i === 0) {
                   continue
                 }
-                if (idx === 1 && item1.type === "break") {
+                if (i === 1 && item1.type === "break") {
                   continue
                 }
                 itemChild.push(item1)

@@ -43,8 +43,8 @@ export function getFocusables(
 
   const focusableElements = elements.filter(isFocusable)
 
-  for (const element of focusableElements) {
-    const i = focusableElements.indexOf(element)
+  for (let i = 0; i < focusableElements.length; i++) {
+    const element = focusableElements[i]
     if (isFrame(element) && element.contentDocument) {
       const frameBody = element.contentDocument.body
       focusableElements.splice(i, 1, ...getFocusables(frameBody))
@@ -87,8 +87,8 @@ export function getTabbables(
     tabbableElements.unshift(container)
   }
 
-  for (const element of tabbableElements) {
-    const i = tabbableElements.indexOf(element)
+  for (let i = 0; i < tabbableElements.length; i++) {
+    const element = tabbableElements[i]
     if (isFrame(element) && element.contentDocument) {
       const frameBody = element.contentDocument.body
       const allFrameTabbable = getTabbables(frameBody)
@@ -123,7 +123,7 @@ export function getLastTabbable(
   includeContainer?: IncludeContainerType,
 ): HTMLElement | null {
   const elements = getTabbables(container, includeContainer)
-  return elements[elements.length - 1] || null
+  return elements.at(-1) || null
 }
 
 export function getTabbableEdges(
@@ -132,7 +132,7 @@ export function getTabbableEdges(
 ): [HTMLElement, HTMLElement] | [null, null] {
   const elements = getTabbables(container, includeContainer)
   const first = elements[0] || null
-  const last = elements[elements.length - 1] || null
+  const last = elements.at(-1)! || null
   return [first, last]
 }
 

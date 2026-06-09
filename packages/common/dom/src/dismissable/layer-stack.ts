@@ -155,9 +155,9 @@ export const layerStack = {
     }
   },
   syncLayers(): void {
-    for (const layer of this.layers) {
-      const index = this.layers.indexOf(layer)
-      layer.node.style.setProperty("--layer-index", `${index}`)
+    for (let i = 0; i < this.layers.length; i++) {
+      const layer = this.layers[i]
+      layer.node.style.setProperty("--layer-index", `${i}`)
 
       // Remove previous data attributes
       layer.node.removeAttribute("data-nested")
